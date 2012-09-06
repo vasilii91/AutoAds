@@ -26,7 +26,7 @@
                     </connections>
                 </tabBarController>
             </objects>
-            <point key="canvasLocation" x="-570" y="286"/>
+            <point key="canvasLocation" x="446" y="376"/>
         </scene>
         <!--Navigation Controller - Item-->
         <scene sceneID="uCu-3N-S8G">
@@ -43,7 +43,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="226" y="-28"/>
+            <point key="canvasLocation" x="986" y="-42"/>
         </scene>
         <!--Search View Controller - Item-->
         <scene sceneID="MMs-mD-7eb">
@@ -156,33 +156,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="666" y="-28"/>
-        </scene>
-        <!--Table View Controller - Добавить-->
-        <scene sceneID="Dl8-ha-Ru2">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yu4-JE-e6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="Rfk-vs-1Ej" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hXQ-OE-o2G">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="SkN-gs-9M0">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </tableViewCell>
-                        </prototypes>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Добавить" id="VJy-m2-HVe"/>
-                </tableViewController>
-            </objects>
-            <point key="canvasLocation" x="754" y="557"/>
+            <point key="canvasLocation" x="1426" y="-42"/>
         </scene>
         <!--Navigation Controller - Item-->
         <scene sceneID="Pfc-Hh-rid">
@@ -194,37 +168,26 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Rfk-vs-1Ej" kind="relationship" relationship="rootViewController" id="Rf9-s3-WBv"/>
+                        <segue destination="YYl-aQ-mWD" kind="relationship" relationship="rootViewController" id="y9n-1f-dlG"/>
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="220" y="557"/>
+            <point key="canvasLocation" x="980" y="543"/>
         </scene>
-        <!--Table View Controller - Еще-->
-        <scene sceneID="bo5-13-8dK">
+        <!--Add View Controller - Добавить-->
+        <scene sceneID="1Pf-XG-2hu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="T4E-yz-5eO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="8vB-FG-DIb" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Rfz-kU-Ppr">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="77l-MY-gij" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="YYl-aQ-mWD" customClass="AddViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eu2-Hw-6vK">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="iD7-0h-7bg">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </tableViewCell>
-                        </prototypes>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Еще" id="pLz-Vf-ynm"/>
-                </tableViewController>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Добавить" id="sug-tI-smj"/>
+                </viewController>
             </objects>
-            <point key="canvasLocation" x="742" y="1827"/>
+            <point key="canvasLocation" x="1458" y="553"/>
         </scene>
         <!--Navigation Controller - Item-->
         <scene sceneID="zm4-Kv-an4">
@@ -236,37 +199,26 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="8vB-FG-DIb" kind="relationship" relationship="rootViewController" id="Kyz-9n-tnr"/>
+                        <segue destination="609-Yo-Dh0" kind="relationship" relationship="rootViewController" id="oeZ-vd-LU8"/>
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="208" y="1827"/>
+            <point key="canvasLocation" x="968" y="1813"/>
         </scene>
-        <!--Table View Controller - Избранное-->
-        <scene sceneID="AQN-bK-YNG">
+        <!--More View Controller - Еще-->
+        <scene sceneID="Z1d-Bd-zwi">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ogp-V5-HEi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="E8J-6S-aQF" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="JZ7-wN-QJP">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uwd-4y-0la" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="609-Yo-Dh0" customClass="MoreViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0eG-ZV-buI">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="1IW-ha-ROS">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </tableViewCell>
-                        </prototypes>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Избранное" id="Z2I-Fs-yKM"/>
-                </tableViewController>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Еще" id="VKy-17-rIk"/>
+                </viewController>
             </objects>
-            <point key="canvasLocation" x="748" y="1177"/>
+            <point key="canvasLocation" x="1504" y="1813"/>
         </scene>
         <!--Navigation Controller - Item-->
         <scene sceneID="tQc-FD-FfV">
@@ -278,11 +230,26 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="E8J-6S-aQF" kind="relationship" relationship="rootViewController" id="q14-11-vec"/>
+                        <segue destination="5KM-ZQ-QW4" kind="relationship" relationship="rootViewController" id="ehc-jC-YBh"/>
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="214" y="1177"/>
+            <point key="canvasLocation" x="974" y="1163"/>
+        </scene>
+        <!--Favorites View Controller - Избранное-->
+        <scene sceneID="JpZ-q9-0WV">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5C0-1V-1LS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="5KM-ZQ-QW4" customClass="FavoritesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jpJ-OK-U1P">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Избранное" id="LLu-Ik-ubS"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1524" y="1142"/>
         </scene>
         <!--Main Menu View Controller-->
         <scene sceneID="7pz-ab-wqV">
@@ -313,10 +280,11 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="clickOnButton:" destination="HIY-ih-cJ9" eventType="touchUpInside" id="Phm-fD-1CE"/>
                                     <segue destination="sQh-8b-pyF" kind="custom" identifier="flipSegue" customClass="FlipSegue" id="FKk-0s-o2L"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="X9b-io-JkK">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="X9b-io-JkK">
                                 <rect key="frame" x="0.0" y="157" width="320" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -330,8 +298,12 @@
                                 <state key="highlighted" image="addBlue.png">
                                     <color key="titleColor" red="0.0" green="0.37647058820000001" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickOnButton:" destination="HIY-ih-cJ9" eventType="touchUpInside" id="o1w-ky-iML"/>
+                                    <segue destination="sQh-8b-pyF" kind="custom" identifier="flip2Segue" customClass="FlipSegue" id="kdz-5I-STC"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BIV-rO-Zta">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BIV-rO-Zta">
                                 <rect key="frame" x="0.0" y="234" width="320" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -345,8 +317,12 @@
                                 <state key="highlighted" image="starBlue.png">
                                     <color key="titleColor" red="0.0" green="0.37647058820000001" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickOnButton:" destination="HIY-ih-cJ9" eventType="touchUpInside" id="PFc-am-3PY"/>
+                                    <segue destination="sQh-8b-pyF" kind="custom" identifier="flip3Segue" customClass="FlipSegue" id="d6t-dF-Kbr"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xSO-Re-oPU">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xSO-Re-oPU">
                                 <rect key="frame" x="0.0" y="311" width="320" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -361,6 +337,10 @@
                                     <color key="titleColor" red="0.0" green="0.37647058820000001" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickOnButton:" destination="HIY-ih-cJ9" eventType="touchUpInside" id="eRu-he-Cuj"/>
+                                    <segue destination="sQh-8b-pyF" kind="custom" identifier="flipSegue" customClass="FlipSegue" id="RUh-nQ-Sg3"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" id="5n4-pm-FWJ">
                                 <rect key="frame" x="0.0" y="388" width="320" height="72"/>
@@ -370,7 +350,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="5"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Nwf-jp-liS">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Nwf-jp-liS">
                                         <rect key="frame" x="11" y="16" width="299" height="47"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -384,6 +364,9 @@
                                         <state key="highlighted">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="clickOnButton:" destination="HIY-ih-cJ9" eventType="touchUpInside" id="qtm-5F-h8z"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -401,7 +384,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-769" y="-422"/>
+            <point key="canvasLocation" x="-337" y="376"/>
         </scene>
     </scenes>
     <resources>
@@ -417,9 +400,54 @@
         <image name="searchIcon.png" width="16" height="16"/>
         <image name="starBlue.png" width="16" height="16"/>
     </resources>
+    <classes>
+        <class className="AddViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddViewController.h"/>
+        </class>
+        <class className="ButtonCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ButtonCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="FavoritesViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FavoritesViewController.h"/>
+        </class>
+        <class className="MainMenuViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainMenuViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="clickOnButton:"/>
+                <relationship kind="outlet" name="_addButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="_bottomBar" candidateClass="UIView"/>
+                <relationship kind="outlet" name="_favButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="_infoButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="_moreButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="_searchButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="MoreViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MoreViewController.h"/>
+        </class>
+        <class className="RubrikCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RubrikCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SearchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SearchViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="d6t-dF-Kbr"/>
+    </inferredMetricsTieBreakers>
 </document>

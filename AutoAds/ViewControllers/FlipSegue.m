@@ -21,6 +21,7 @@
     
     if ([dst isKindOfClass:[UITabBarController class]]) {
         UITabBarController *tbc = (UITabBarController *)dst;
+        tbc.selectedIndex = [[NSUserDefaults standardUserDefaults] integerForKey:SELECTED_TAB_BAR_INDEX];
         [tbc.tabBar setBackgroundImage:[UIImage imageNamed:@"tabbarBackground.png"]];
         
         NSDictionary *attr = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:FONT_DINPro_REGULAR size:11.], UITextAttributeFont, [UIColor whiteColor], UITextAttributeTextColor, [UIColor blackColor], UITextAttributeTextShadowColor, [NSValue valueWithUIOffset:UIOffsetMake(0, -1)], UITextAttributeTextShadowOffset, nil];

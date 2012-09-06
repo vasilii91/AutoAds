@@ -13,5 +13,6 @@
     #import <Foundation/Foundation.h>
     #import "Core/Extensions/UIColor+Colors.h"
     #import "Core/Constants.h"
+    #import "Core/logger.h"
     #import "MainController.h"
 #endif

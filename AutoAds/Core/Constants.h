@@ -38,3 +38,5 @@
 #define FONT_DINPro_BOLD @"DINPro-Bold"
 
 #define DOCUMENTS_DIRECTORY [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
+
+#define SELECTED_TAB_BAR_INDEX @"selected tab bar index"

@@ -14,7 +14,11 @@
 @synthesize button = _button;
 @synthesize delegate = _delegate;
 
-- (void)awakeFromNib {    
+
+#pragma mark - Initialization
+
+- (void)awakeFromNib
+{
     [_titleLabel setFont:[UIFont fontWithName:FONT_DINPro_BOLD size:13.]];
     [_button.titleLabel setFont:[UIFont fontWithName:FONT_DINPro_BOLD size:14.]];
     [_button setBackgroundImage:[[UIImage imageNamed:@"tableButton.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 4, 0, 4)] forState:UIControlStateNormal];
@@ -24,14 +28,19 @@
     [self setBackgroundView:iv];
 }
 
-- (void)onButton:(id)sender {
+- (CGFloat)cellHeight
+{
+    return 50;
+}
+
+
+#pragma mark - Actions
+
+- (void)onButton:(id)sender
+{
     if (_delegate != nil && [_delegate conformsToProtocol:@protocol(ButtonCellDelegate)] && [_delegate respondsToSelector:@selector(didTapButtonInButtonCell:)]) {
         [_delegate didTapButtonInButtonCell:self];
     }
-}
-
-- (CGFloat)cellHeight {
-    return 50.;
 }
 
 @end

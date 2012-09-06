@@ -12,6 +12,9 @@
 
 @synthesize titleLabel = _titleLabel;
 
+
+#pragma mark - Initialization
+
 - (void)awakeFromNib
 {
     [_titleLabel setFont:[UIFont fontWithName:FONT_DINPro_BOLD size:14]];

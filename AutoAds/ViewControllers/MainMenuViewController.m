@@ -23,13 +23,8 @@
     IBOutlet UIButton *_infoButton;
 }
 
-//- (id)init {
-//    self = [[UIStoryboard storyboardWithName:@"MainMenuViewController" bundle:nil] instantiateViewControllerWithIdentifier:@"MainMenuViewController"];
-//    if (self) {
-//        //
-//    }
-//    return self;
-//}
+
+#pragma mark - ViewController's lifecycle
 
 - (void)viewDidLoad
 {
@@ -47,28 +42,25 @@
     [_infoButton.titleLabel setFont:[UIFont fontWithName:FONT_DINPro_REGULAR size:14.]];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated
+{
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
-- (void)viewDidUnload
+
+#pragma mark - Actions
+
+- (IBAction)clickOnButton:(UIButton *)button
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
+    LOG(@"%d", button.tag);
+    if (button.tag == 4) {
+        HelpfulInfoViewController *hivc = [[HelpfulInfoViewController alloc] initWithNibName:@"HelpfulInfoViewController" bundle:nil];
+        [UIView transitionFromView:self.view toView:hivc.view duration:0.5 options:UIViewAnimationTransitionFlipFromLeft completion:^(BOOL finished) {}];
+    }
+    else {
+        [[NSUserDefaults standardUserDefaults] setInteger:button.tag forKey:SELECTED_TAB_BAR_INDEX];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
 }
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-- (IBAction)pushSearch:(id)sender {
-//    UITabBarController *tbc = [[UIStoryboard storyboardWithName:@"MainFlow" bundle:nil] instantiateViewControllerWithIdentifier:@"TabBarController"];
-    SearchViewController *svc = [[SearchViewController alloc] init];
-    [UIView transitionFromView:self.view toView:svc.view duration:0.5 options:UIViewAnimationTransitionFlipFromLeft completion:^(BOOL finished) {
-        [[UIApplication sharedApplication].keyWindow setRootViewController:svc];
-    }];
-}
-
 @end

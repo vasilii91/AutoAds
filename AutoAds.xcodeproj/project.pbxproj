@@ -49,6 +49,12 @@
 		BEC9943E15F88B67006BDCA9 /* ButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC9943A15F88B67006BDCA9 /* ButtonCell.m */; };
 		BEC9943F15F88B67006BDCA9 /* RubrikCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC9943D15F88B67006BDCA9 /* RubrikCell.m */; };
 		BEC9944815F88E38006BDCA9 /* PrettyViews.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC9944715F88E38006BDCA9 /* PrettyViews.m */; };
+		BEF6390415F8D2D000B0CAD0 /* HelpfulInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6390215F8D2D000B0CAD0 /* HelpfulInfoViewController.m */; };
+		BEF6390515F8D2D000B0CAD0 /* HelpfulInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEF6390315F8D2D000B0CAD0 /* HelpfulInfoViewController.xib */; };
+		BEF6390815F8D9AF00B0CAD0 /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6390715F8D9AF00B0CAD0 /* FavoritesViewController.m */; };
+		BEF6390C15F8EA7C00B0CAD0 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6390B15F8EA7C00B0CAD0 /* AddViewController.m */; };
+		BEF6390F15F8EB8000B0CAD0 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6390E15F8EB8000B0CAD0 /* MoreViewController.m */; };
+		BEF6391315F8EE5D00B0CAD0 /* SearchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6391215F8EE5D00B0CAD0 /* SearchManager.m */; };
 		DD35F56515DD284000B47C5F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD35F56415DD284000B47C5F /* Icon.png */; };
 		DD35F56715DD284600B47C5F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD35F56615DD284600B47C5F /* Icon@2x.png */; };
 		DDE5425015D93FF500172CE6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE5424F15D93FF500172CE6 /* UIKit.framework */; };
@@ -112,6 +118,18 @@
 		BEC9944715F88E38006BDCA9 /* PrettyViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrettyViews.m; path = Views/PrettyViews.m; sourceTree = "<group>"; };
 		BEC9944915F8937C006BDCA9 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		BEC9944D15F89681006BDCA9 /* UIColor+Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Colors.h"; sourceTree = "<group>"; };
+		BEF6390115F8D2D000B0CAD0 /* HelpfulInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelpfulInfoViewController.h; path = HelpfulInfoViewController/HelpfulInfoViewController.h; sourceTree = "<group>"; };
+		BEF6390215F8D2D000B0CAD0 /* HelpfulInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HelpfulInfoViewController.m; path = HelpfulInfoViewController/HelpfulInfoViewController.m; sourceTree = "<group>"; };
+		BEF6390315F8D2D000B0CAD0 /* HelpfulInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HelpfulInfoViewController.xib; path = HelpfulInfoViewController/HelpfulInfoViewController.xib; sourceTree = "<group>"; };
+		BEF6390615F8D9AF00B0CAD0 /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
+		BEF6390715F8D9AF00B0CAD0 /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
+		BEF6390915F8E1EA00B0CAD0 /* logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = logger.h; sourceTree = "<group>"; };
+		BEF6390A15F8EA7C00B0CAD0 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		BEF6390B15F8EA7C00B0CAD0 /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		BEF6390D15F8EB8000B0CAD0 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		BEF6390E15F8EB8000B0CAD0 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		BEF6391115F8EE5D00B0CAD0 /* SearchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchManager.h; path = SearchManager/SearchManager.h; sourceTree = "<group>"; };
+		BEF6391215F8EE5D00B0CAD0 /* SearchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchManager.m; path = SearchManager/SearchManager.m; sourceTree = "<group>"; };
 		DD35F56415DD284000B47C5F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		DD35F56615DD284600B47C5F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		DDE5424B15D93FF500172CE6 /* AutoAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,6 +253,7 @@
 				BEC9944415F88D01006BDCA9 /* AddViewController */,
 				BEC9944315F88D01006BDCA9 /* FavoritesViewController */,
 				BEC9944215F88D01006BDCA9 /* MoreViewController */,
+				BEF6390015F8D27600B0CAD0 /* HelpfulInfoViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -251,9 +270,9 @@
 		BEC9943815F88B67006BDCA9 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				BEC9943B15F88B67006BDCA9 /* CellHeightProtocol.h */,
 				BEC9943915F88B67006BDCA9 /* ButtonCell.h */,
 				BEC9943A15F88B67006BDCA9 /* ButtonCell.m */,
-				BEC9943B15F88B67006BDCA9 /* CellHeightProtocol.h */,
 				BEC9943C15F88B67006BDCA9 /* RubrikCell.h */,
 				BEC9943D15F88B67006BDCA9 /* RubrikCell.m */,
 			);
@@ -263,9 +282,11 @@
 		BEC9944015F88B75006BDCA9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				BEF6391015F8EE3F00B0CAD0 /* SearchManager */,
 				BEC9944C15F89681006BDCA9 /* Extensions */,
 				BEC9944515F88E1F006BDCA9 /* Views */,
 				BEC9944915F8937C006BDCA9 /* Constants.h */,
+				BEF6390915F8E1EA00B0CAD0 /* logger.h */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -273,6 +294,8 @@
 		BEC9944215F88D01006BDCA9 /* MoreViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BEF6390D15F8EB8000B0CAD0 /* MoreViewController.h */,
+				BEF6390E15F8EB8000B0CAD0 /* MoreViewController.m */,
 			);
 			path = MoreViewController;
 			sourceTree = "<group>";
@@ -280,6 +303,8 @@
 		BEC9944315F88D01006BDCA9 /* FavoritesViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BEF6390615F8D9AF00B0CAD0 /* FavoritesViewController.h */,
+				BEF6390715F8D9AF00B0CAD0 /* FavoritesViewController.m */,
 			);
 			path = FavoritesViewController;
 			sourceTree = "<group>";
@@ -287,6 +312,8 @@
 		BEC9944415F88D01006BDCA9 /* AddViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BEF6390A15F8EA7C00B0CAD0 /* AddViewController.h */,
+				BEF6390B15F8EA7C00B0CAD0 /* AddViewController.m */,
 			);
 			path = AddViewController;
 			sourceTree = "<group>";
@@ -306,6 +333,25 @@
 				BEC9944D15F89681006BDCA9 /* UIColor+Colors.h */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BEF6390015F8D27600B0CAD0 /* HelpfulInfoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6390115F8D2D000B0CAD0 /* HelpfulInfoViewController.h */,
+				BEF6390215F8D2D000B0CAD0 /* HelpfulInfoViewController.m */,
+				BEF6390315F8D2D000B0CAD0 /* HelpfulInfoViewController.xib */,
+			);
+			name = HelpfulInfoViewController;
+			sourceTree = "<group>";
+		};
+		BEF6391015F8EE3F00B0CAD0 /* SearchManager */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6391115F8EE5D00B0CAD0 /* SearchManager.h */,
+				BEF6391215F8EE5D00B0CAD0 /* SearchManager.m */,
+			);
+			name = SearchManager;
 			sourceTree = "<group>";
 		};
 		DDE5424015D93FF500172CE6 = {
@@ -453,6 +499,7 @@
 				BEC9942615F88A8A006BDCA9 /* searchIcon@2x.png in Resources */,
 				BEC9942715F88A8A006BDCA9 /* tableButton@2x.png in Resources */,
 				BEC9943515F88B5B006BDCA9 /* MainFlow.storyboard in Resources */,
+				BEF6390515F8D2D000B0CAD0 /* HelpfulInfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +535,11 @@
 				BEC9943E15F88B67006BDCA9 /* ButtonCell.m in Sources */,
 				BEC9943F15F88B67006BDCA9 /* RubrikCell.m in Sources */,
 				BEC9944815F88E38006BDCA9 /* PrettyViews.m in Sources */,
+				BEF6390415F8D2D000B0CAD0 /* HelpfulInfoViewController.m in Sources */,
+				BEF6390815F8D9AF00B0CAD0 /* FavoritesViewController.m in Sources */,
+				BEF6390C15F8EA7C00B0CAD0 /* AddViewController.m in Sources */,
+				BEF6390F15F8EB8000B0CAD0 /* MoreViewController.m in Sources */,
+				BEF6391315F8EE5D00B0CAD0 /* SearchManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

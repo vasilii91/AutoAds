@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HelpfulInfoViewController.h"
+#import "FavoritesViewController.h"
 
 @interface MainMenuViewController : UIViewController
 
+- (IBAction)clickOnButton:(id)sender;
 @end

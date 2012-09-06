@@ -12,9 +12,12 @@ static MainController *sharedControllerInstance;
 
 @implementation MainController
 
-+ (MainController *)sharedController {
-    if (sharedControllerInstance == nil)
++ (MainController *)sharedController
+{
+    if (sharedControllerInstance == nil) {
         sharedControllerInstance = [[self alloc] init];
+    }
+    
     return sharedControllerInstance;
 }
 

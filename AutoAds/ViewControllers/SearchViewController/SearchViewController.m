@@ -23,8 +23,8 @@
 
 @end
 
-@implementation SearchViewController {
-    
+@implementation SearchViewController
+{
     IBOutlet UIView *_header;
     IBOutlet UIButton *_searchButton;
     
@@ -39,23 +39,30 @@
     NSArray *_subtypes;
     BOOL _subTypesShown;
     NSInteger _selectedSubtype;
+    
+    NSArray *_brands;
+    BOOL _brandsShown;
+    NSInteger _selectedBrand;
 }
 
 @synthesize tableView = _tableView;
+
+#pragma mark - ViewController's lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    _cities = [NSArray arrayWithObjects:@"Челябинск", @"Ростов", @"Тюмень", @"Пермь", @"Самара", @"Волгоград", @"Казань", @"Архангельск", @"Ярославль", nil];
-    _types = [NSArray arrayWithObjects:@"Легковые автомобили", @"Коммерческий транспорт", @"Мототехника", @"Водный транспорт", @"Шины и диски", @"Автозапчасти", nil];
-    _subtypes = [NSArray arrayWithObjects:
-                 [NSArray arrayWithObjects:@"Отечественные", @"Иномарки", @"Прицепы", nil],
-                 [NSArray arrayWithObjects:@"Автобусы", @"Грузовые", @"Малый коммерческий", @"Грузовые прицепы", @"Спецтехника", nil],
-                 [NSArray arrayWithObjects:@"Мотоциклы и мопеды", @"Квадроциклы", @"Скутеры", @"Снегоходы", nil],
-                 [NSArray arrayWithObjects:@"Гидроциклы", @"Катера и яхты", @"Лодки", nil],
-                 [NSArray arrayWithObjects:@"Диски", @"Шины", nil],
-                 nil];
+    _cities = @[@"Челябинск", @"Ростов", @"Тюмень", @"Пермь", @"Самара", @"Волгоград", @"Казань", @"Архангельск", @"Ярославль"];
+    _types = @[@"Легковые автомобили", @"Коммерческий транспорт", @"Мототехника", @"Водный транспорт", @"Шины и диски", @"Автозапчасти"];
+    _subtypes = @[
+                 @[@"Отечественные", @"Иномарки", @"Прицепы"],
+                 @[@"Автобусы", @"Грузовые", @"Малый коммерческий", @"Грузовые прицепы", @"Спецтехника"],
+                 @[@"Мотоциклы и мопеды", @"Квадроциклы", @"Скутеры", @"Снегоходы"],
+                 @[@"Гидроциклы", @"Катера и яхты", @"Лодки"],
+                 @[@"Диски", @"Шины"],
+                 @[@"Ничего"],
+                 ];
     
     _selectedCity = 0;
     _selectedType = 0;
@@ -74,14 +81,17 @@
     self.navigationItem.leftBarButtonItem = bbi;
 }
 
-- (void)goBack:(id)sender
-{
-    [self.tabBarController performSegueWithIdentifier:@"flipSegue" sender:self];
-}
-
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+}
+
+
+#pragma mark - Actions
+
+- (void)goBack:(id)sender
+{
+    [self.tabBarController performSegueWithIdentifier:@"flipSegue" sender:self];
 }
 
 
@@ -110,7 +120,8 @@
     return 0;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     id <CellHeightProtocol> cell = (id)[self tableView:tableView cellForRowAtIndexPath:indexPath];
     return cell.cellHeight;
 }
