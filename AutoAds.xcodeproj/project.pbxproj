@@ -55,6 +55,8 @@
 		BEF6390C15F8EA7C00B0CAD0 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6390B15F8EA7C00B0CAD0 /* AddViewController.m */; };
 		BEF6390F15F8EB8000B0CAD0 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6390E15F8EB8000B0CAD0 /* MoreViewController.m */; };
 		BEF6391315F8EE5D00B0CAD0 /* SearchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6391215F8EE5D00B0CAD0 /* SearchManager.m */; };
+		BEF6391815F9E8A400B0CAD0 /* AdvField.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6391715F9E8A400B0CAD0 /* AdvField.m */; };
+		BEF6391C15F9FD5A00B0CAD0 /* AdvGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6391B15F9FD5A00B0CAD0 /* AdvGroup.m */; };
 		DD35F56515DD284000B47C5F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD35F56415DD284000B47C5F /* Icon.png */; };
 		DD35F56715DD284600B47C5F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD35F56615DD284600B47C5F /* Icon@2x.png */; };
 		DDE5425015D93FF500172CE6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE5424F15D93FF500172CE6 /* UIKit.framework */; };
@@ -130,6 +132,12 @@
 		BEF6390E15F8EB8000B0CAD0 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
 		BEF6391115F8EE5D00B0CAD0 /* SearchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchManager.h; path = SearchManager/SearchManager.h; sourceTree = "<group>"; };
 		BEF6391215F8EE5D00B0CAD0 /* SearchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchManager.m; path = SearchManager/SearchManager.m; sourceTree = "<group>"; };
+		BEF6391615F9E8A400B0CAD0 /* AdvField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvField.h; path = SearchManager/Entities/AdvField.h; sourceTree = "<group>"; };
+		BEF6391715F9E8A400B0CAD0 /* AdvField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdvField.m; path = SearchManager/Entities/AdvField.m; sourceTree = "<group>"; };
+		BEF6391915F9E8C000B0CAD0 /* AdvEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AdvEnums.h; path = SearchManager/Entities/AdvEnums.h; sourceTree = "<group>"; };
+		BEF6391A15F9FD5A00B0CAD0 /* AdvGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvGroup.h; path = SearchManager/Entities/AdvGroup.h; sourceTree = "<group>"; };
+		BEF6391B15F9FD5A00B0CAD0 /* AdvGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdvGroup.m; path = SearchManager/Entities/AdvGroup.m; sourceTree = "<group>"; };
+		BEF6391D15F9FEBD00B0CAD0 /* AdvFieldNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvFieldNames.h; sourceTree = "<group>"; };
 		DD35F56415DD284000B47C5F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		DD35F56615DD284600B47C5F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		DDE5424B15D93FF500172CE6 /* AutoAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -348,10 +356,24 @@
 		BEF6391015F8EE3F00B0CAD0 /* SearchManager */ = {
 			isa = PBXGroup;
 			children = (
+				BEF6391415F9E86600B0CAD0 /* Entities */,
+				BEF6391D15F9FEBD00B0CAD0 /* AdvFieldNames.h */,
 				BEF6391115F8EE5D00B0CAD0 /* SearchManager.h */,
 				BEF6391215F8EE5D00B0CAD0 /* SearchManager.m */,
 			);
 			name = SearchManager;
+			sourceTree = "<group>";
+		};
+		BEF6391415F9E86600B0CAD0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6391915F9E8C000B0CAD0 /* AdvEnums.h */,
+				BEF6391615F9E8A400B0CAD0 /* AdvField.h */,
+				BEF6391715F9E8A400B0CAD0 /* AdvField.m */,
+				BEF6391A15F9FD5A00B0CAD0 /* AdvGroup.h */,
+				BEF6391B15F9FD5A00B0CAD0 /* AdvGroup.m */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 		DDE5424015D93FF500172CE6 = {
@@ -540,6 +562,8 @@
 				BEF6390C15F8EA7C00B0CAD0 /* AddViewController.m in Sources */,
 				BEF6390F15F8EB8000B0CAD0 /* MoreViewController.m in Sources */,
 				BEF6391315F8EE5D00B0CAD0 /* SearchManager.m in Sources */,
+				BEF6391815F9E8A400B0CAD0 /* AdvField.m in Sources */,
+				BEF6391C15F9FD5A00B0CAD0 /* AdvGroup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

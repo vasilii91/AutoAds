@@ -7,14 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-
-enum
-{
-    RubricTypeMotors
-};
-typedef NSUInteger RubricType;
+#import "AdvField.h"
+#import "AdvGroup.h"
 
 @interface SearchManager : NSObject
+{
+    NSMutableArray *groups;
+}
 
 - (NSArray *)categoriesByRubric:(NSString *)rubric subrubric:(NSString *)subrubric;
 
