@@ -10,7 +10,7 @@
 #import "ButtonCell.h"
 #import "PrettyViews.h"
 
-@interface SearchViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, ButtonCellDelegate>
+@interface SearchViewControllerOld : UIViewController <UITableViewDataSource, UITableViewDelegate, ButtonCellDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 

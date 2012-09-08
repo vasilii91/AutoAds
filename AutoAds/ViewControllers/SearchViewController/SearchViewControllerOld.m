@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Kyr Dunenkoff. All rights reserved.
 //
 
-#import "SearchViewController.h"
+#import "SearchViewControllerOld.h"
 #import "CellHeightProtocol.h"
 
 #import "ButtonCell.h"
@@ -19,11 +19,11 @@
 #define PRICE 8
 #define YEAR 10;
 
-@interface SearchViewController ()
+@interface SearchViewControllerOld ()
 
 @end
 
-@implementation SearchViewController
+@implementation SearchViewControllerOld
 {
     IBOutlet UIView *_header;
     IBOutlet UIButton *_searchButton;

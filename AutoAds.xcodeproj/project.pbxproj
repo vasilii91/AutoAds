@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10A3FB6315FC0F6C007FE234 /* SearchViewControllerOld.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A3FB6215FC0F6C007FE234 /* SearchViewControllerOld.m */; };
 		BEC9940615F88A8A006BDCA9 /* DINPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC993E015F88A8A006BDCA9 /* DINPro-Black.otf */; };
 		BEC9940715F88A8A006BDCA9 /* DINPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC993E115F88A8A006BDCA9 /* DINPro-Bold.otf */; };
 		BEC9940815F88A8A006BDCA9 /* DINPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC993E215F88A8A006BDCA9 /* DINPro-Light.otf */; };
@@ -45,7 +46,6 @@
 		BEC9943415F88B5B006BDCA9 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC9942C15F88B5B006BDCA9 /* MainController.m */; };
 		BEC9943515F88B5B006BDCA9 /* MainFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC9942D15F88B5B006BDCA9 /* MainFlow.storyboard */; };
 		BEC9943615F88B5B006BDCA9 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC9942F15F88B5B006BDCA9 /* MainMenuViewController.m */; };
-		BEC9943715F88B5B006BDCA9 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC9943215F88B5B006BDCA9 /* SearchViewController.m */; };
 		BEC9943E15F88B67006BDCA9 /* ButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC9943A15F88B67006BDCA9 /* ButtonCell.m */; };
 		BEC9943F15F88B67006BDCA9 /* RubrikCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC9943D15F88B67006BDCA9 /* RubrikCell.m */; };
 		BEC9944815F88E38006BDCA9 /* PrettyViews.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC9944715F88E38006BDCA9 /* PrettyViews.m */; };
@@ -68,6 +68,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10A3FB6215FC0F6C007FE234 /* SearchViewControllerOld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewControllerOld.m; sourceTree = "<group>"; };
 		BEC993E015F88A8A006BDCA9 /* DINPro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Black.otf"; sourceTree = "<group>"; };
 		BEC993E115F88A8A006BDCA9 /* DINPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Bold.otf"; sourceTree = "<group>"; };
 		BEC993E215F88A8A006BDCA9 /* DINPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Light.otf"; sourceTree = "<group>"; };
@@ -109,8 +110,7 @@
 		BEC9942D15F88B5B006BDCA9 /* MainFlow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainFlow.storyboard; sourceTree = "<group>"; };
 		BEC9942E15F88B5B006BDCA9 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		BEC9942F15F88B5B006BDCA9 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
-		BEC9943115F88B5B006BDCA9 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
-		BEC9943215F88B5B006BDCA9 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		BEC9943115F88B5B006BDCA9 /* SearchViewControllerOld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewControllerOld.h; sourceTree = "<group>"; };
 		BEC9943915F88B67006BDCA9 /* ButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonCell.h; sourceTree = "<group>"; };
 		BEC9943A15F88B67006BDCA9 /* ButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonCell.m; sourceTree = "<group>"; };
 		BEC9943B15F88B67006BDCA9 /* CellHeightProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellHeightProtocol.h; sourceTree = "<group>"; };
@@ -269,8 +269,8 @@
 		BEC9943015F88B5B006BDCA9 /* SearchViewController */ = {
 			isa = PBXGroup;
 			children = (
-				BEC9943115F88B5B006BDCA9 /* SearchViewController.h */,
-				BEC9943215F88B5B006BDCA9 /* SearchViewController.m */,
+				BEC9943115F88B5B006BDCA9 /* SearchViewControllerOld.h */,
+				10A3FB6215FC0F6C007FE234 /* SearchViewControllerOld.m */,
 			);
 			path = SearchViewController;
 			sourceTree = "<group>";
@@ -553,7 +553,6 @@
 				BEC9943315F88B5B006BDCA9 /* FlipSegue.m in Sources */,
 				BEC9943415F88B5B006BDCA9 /* MainController.m in Sources */,
 				BEC9943615F88B5B006BDCA9 /* MainMenuViewController.m in Sources */,
-				BEC9943715F88B5B006BDCA9 /* SearchViewController.m in Sources */,
 				BEC9943E15F88B67006BDCA9 /* ButtonCell.m in Sources */,
 				BEC9943F15F88B67006BDCA9 /* RubrikCell.m in Sources */,
 				BEC9944815F88E38006BDCA9 /* PrettyViews.m in Sources */,
@@ -564,6 +563,7 @@
 				BEF6391315F8EE5D00B0CAD0 /* SearchManager.m in Sources */,
 				BEF6391815F9E8A400B0CAD0 /* AdvField.m in Sources */,
 				BEF6391C15F9FD5A00B0CAD0 /* AdvGroup.m in Sources */,
+				10A3FB6315FC0F6C007FE234 /* SearchViewControllerOld.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

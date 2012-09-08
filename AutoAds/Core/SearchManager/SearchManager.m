@@ -31,6 +31,7 @@ static SearchManager *_sharedMySingleton = nil;
     {
         if (!_sharedMySingleton) {
             _sharedMySingleton = [[SearchManager alloc] init];
+            [_sharedMySingleton fillGroups];
         }
     }
     
@@ -42,13 +43,12 @@ static SearchManager *_sharedMySingleton = nil;
 
 - (NSArray *)categoriesByRubric:(NSString *)rubric subrubric:(NSString *)subrubric
 {
-    
-    return nil;
+    return [groups objectAtIndex:0];
 }
 
 - (void)fillGroups
 {
-    
+    [groups addObject:[self fillGeneralGroup]];
 }
 
 - (AdvGroup *)fillGeneralGroup
@@ -57,13 +57,20 @@ static SearchManager *_sharedMySingleton = nil;
     group.name = @"Общие поля";
     group.type = GroupTypeGeneral;
     
-    NSMutableArray *fields = [NSMutableArray new];
+    AdvField *f1 = [AdvField newAdvField:F_PRICE_ENG :F_PRICE_RUS :nil :nil :nil :ValueTypeString :YES :YES :YES :YES :YES :YES];
+    AdvField *f2 = [AdvField newAdvField:F_BARGAIN_ENG :F_BARGAIN_RUS :nil :nil :nil :ValueTypeBoolean :YES :NO :NO :NO :NO :YES];
+    AdvField *f3 = [AdvField newAdvField:F_CONTACT_NAME_ENG :F_CONTACT_NAME_RUS :nil :nil :nil :ValueTypeString :YES :YES :NO :NO :NO :YES];
+    AdvField *f4 = [AdvField newAdvField:F_CONTACT_PHONE_ENG :F_CONTACT_PHONE_RUS :nil :nil :nil :ValueTypeString :YES :YES :NO :NO :NO :YES];
+    AdvField *f5 = [AdvField newAdvField:F_ADDITIONAL_INFO_ENG :F_ADDITIONAL_INFO_RUS :nil :nil :nil :ValueTypeString :YES :NO :NO :NO :NO :NO];
+    AdvField *f6 = [AdvField newAdvField:F_PHOTO_ENG :F_PHOTO_RUS :nil :nil :nil :ValueTypePhoto :YES :NO :YES :YES :YES :YES];
+    AdvField *f7 = [AdvField newAdvField:F_CITY_ENG :F_CITY_RUS :nil :nil :nil :ValueTypeDictionary :YES :YES :YES :YES :YES :YES];
+    AdvField *f8 = [AdvField newAdvField:F_PERIOD_ENG :F_PERIOD_RUS :nil :nil :nil :ValueTypeDictionary :YES :YES :NO :NO :NO :NO];
+    AdvField *f9 = nil; // непонятно, что делать
+    AdvField *f10 = [AdvField newAdvField:F_DATE_ENG :F_DATE_RUS :nil :nil :nil :ValueTypeString :NO :NO :NO :NO :YES :NO];
+    AdvField *f11 = [AdvField newAdvField:nil :F_IS_RECEIVE_IMMEDIATELY_MESSAGES :nil :[NSNumber numberWithBool:YES] :nil :ValueTypeBoolean :YES :NO :NO :NO :NO :NO];
+    AdvField *f12 = [AdvField newAdvField:nil :F_IS_AGREE_WITH_PLACEMENT_RULES :nil :[NSNumber numberWithBool:NO] :nil :ValueTypeBoolean :YES :YES :NO :NO :NO :NO];
     
-    AdvField *field = [AdvField new];
-    field.name = @"";
-    field.value = RubricTypeMotors;
-    
-    
+    NSArray *fields = @[f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12];
     
     group.fields = fields;
     

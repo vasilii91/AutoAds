@@ -7,7 +7,7 @@
 //
 
 #import "MainMenuViewController.h"
-#import "SearchViewController.h"
+#import "SearchViewControllerOld.h"
 
 @interface MainMenuViewController ()
 

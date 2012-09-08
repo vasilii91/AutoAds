@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "AdvField.h"
 #import "AdvGroup.h"
+#import "AdvFieldNames.h"
 
 @interface SearchManager : NSObject
 {
