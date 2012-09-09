@@ -19,7 +19,7 @@
 
 @interface ButtonCell : UITableViewCell <CellHeightProtocol>
 
-@property (nonatomic, strong) IBOutlet UILabel *titleLabel;
+@property (nonatomic, strong) IBOutlet UITextView *textView;
 @property (nonatomic, strong) IBOutlet UIButton *button;
 @property (nonatomic, weak) id <ButtonCellDelegate> delegate;
 

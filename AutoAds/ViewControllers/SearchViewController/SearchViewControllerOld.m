@@ -149,15 +149,15 @@
     cell.delegate = self;
     switch (indexPath.section) {
         case 0:
-            [cell.titleLabel setText:@"Город"];
+            [cell.textView setText:@"Город"];
             [cell.button setTitle:[_cities objectAtIndex:_selectedCity] forState:UIControlStateNormal];
             break;
         case 2:
-            [cell.titleLabel setText:@"Тип"];
+            [cell.textView setText:@"Тип"];
             [cell.button setTitle:[_types objectAtIndex:_selectedType] forState:UIControlStateNormal];
             break;
         case 4:
-            [cell.titleLabel setText:@"Рубрика"];
+            [cell.textView setText:@"Рубрика"];
             [cell.button setTitle:[[_subtypes objectAtIndex:_selectedType] objectAtIndex:_selectedSubtype] forState:UIControlStateNormal];
             break;
     }

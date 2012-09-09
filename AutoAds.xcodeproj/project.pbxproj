@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		10A3FB6315FC0F6C007FE234 /* SearchViewControllerOld.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A3FB6215FC0F6C007FE234 /* SearchViewControllerOld.m */; };
+		10A3FB6615FC1034007FE234 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A3FB6515FC1034007FE234 /* SearchViewController.m */; };
 		BEC9940615F88A8A006BDCA9 /* DINPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC993E015F88A8A006BDCA9 /* DINPro-Black.otf */; };
 		BEC9940715F88A8A006BDCA9 /* DINPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC993E115F88A8A006BDCA9 /* DINPro-Bold.otf */; };
 		BEC9940815F88A8A006BDCA9 /* DINPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC993E215F88A8A006BDCA9 /* DINPro-Light.otf */; };
@@ -69,6 +70,10 @@
 
 /* Begin PBXFileReference section */
 		10A3FB6215FC0F6C007FE234 /* SearchViewControllerOld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewControllerOld.m; sourceTree = "<group>"; };
+		10A3FB6415FC1034007FE234 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		10A3FB6515FC1034007FE234 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		10BE55AE15FC148D008983A6 /* AdvFieldNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvFieldNames.h; path = SearchManager/Entities/AdvFieldNames.h; sourceTree = "<group>"; };
+		10BE55AF15FC14A4008983A6 /* AdvValues.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AdvValues.h; path = SearchManager/Entities/AdvValues.h; sourceTree = "<group>"; };
 		BEC993E015F88A8A006BDCA9 /* DINPro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Black.otf"; sourceTree = "<group>"; };
 		BEC993E115F88A8A006BDCA9 /* DINPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Bold.otf"; sourceTree = "<group>"; };
 		BEC993E215F88A8A006BDCA9 /* DINPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Light.otf"; sourceTree = "<group>"; };
@@ -137,7 +142,6 @@
 		BEF6391915F9E8C000B0CAD0 /* AdvEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AdvEnums.h; path = SearchManager/Entities/AdvEnums.h; sourceTree = "<group>"; };
 		BEF6391A15F9FD5A00B0CAD0 /* AdvGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvGroup.h; path = SearchManager/Entities/AdvGroup.h; sourceTree = "<group>"; };
 		BEF6391B15F9FD5A00B0CAD0 /* AdvGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdvGroup.m; path = SearchManager/Entities/AdvGroup.m; sourceTree = "<group>"; };
-		BEF6391D15F9FEBD00B0CAD0 /* AdvFieldNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvFieldNames.h; sourceTree = "<group>"; };
 		DD35F56415DD284000B47C5F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		DD35F56615DD284600B47C5F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		DDE5424B15D93FF500172CE6 /* AutoAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -269,6 +273,8 @@
 		BEC9943015F88B5B006BDCA9 /* SearchViewController */ = {
 			isa = PBXGroup;
 			children = (
+				10A3FB6415FC1034007FE234 /* SearchViewController.h */,
+				10A3FB6515FC1034007FE234 /* SearchViewController.m */,
 				BEC9943115F88B5B006BDCA9 /* SearchViewControllerOld.h */,
 				10A3FB6215FC0F6C007FE234 /* SearchViewControllerOld.m */,
 			);
@@ -357,7 +363,6 @@
 			isa = PBXGroup;
 			children = (
 				BEF6391415F9E86600B0CAD0 /* Entities */,
-				BEF6391D15F9FEBD00B0CAD0 /* AdvFieldNames.h */,
 				BEF6391115F8EE5D00B0CAD0 /* SearchManager.h */,
 				BEF6391215F8EE5D00B0CAD0 /* SearchManager.m */,
 			);
@@ -367,6 +372,8 @@
 		BEF6391415F9E86600B0CAD0 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				10BE55AE15FC148D008983A6 /* AdvFieldNames.h */,
+				10BE55AF15FC14A4008983A6 /* AdvValues.h */,
 				BEF6391915F9E8C000B0CAD0 /* AdvEnums.h */,
 				BEF6391615F9E8A400B0CAD0 /* AdvField.h */,
 				BEF6391715F9E8A400B0CAD0 /* AdvField.m */,
@@ -564,6 +571,7 @@
 				BEF6391815F9E8A400B0CAD0 /* AdvField.m in Sources */,
 				BEF6391C15F9FD5A00B0CAD0 /* AdvGroup.m in Sources */,
 				10A3FB6315FC0F6C007FE234 /* SearchViewControllerOld.m in Sources */,
+				10A3FB6615FC1034007FE234 /* SearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

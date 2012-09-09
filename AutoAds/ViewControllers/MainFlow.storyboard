@@ -45,11 +45,11 @@
             </objects>
             <point key="canvasLocation" x="986" y="-42"/>
         </scene>
-        <!--Search View Controller Old - Item-->
+        <!--Search View Controller - Item-->
         <scene sceneID="MMs-mD-7eb">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EBO-Jj-9na" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="SearchViewController" modalTransitionStyle="flipHorizontal" id="LqZ-fd-lGr" customClass="SearchViewControllerOld" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchViewController" modalTransitionStyle="flipHorizontal" id="LqZ-fd-lGr" customClass="SearchViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xt3-Al-Lky">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -66,15 +66,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Город" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="U1d-BO-GQt">
-                                                    <rect key="frame" x="15" y="14" width="102" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qQR-XZ-n6Z">
-                                                    <rect key="frame" x="125" y="7" width="188" height="35"/>
+                                                    <rect key="frame" x="179" y="7" width="134" height="35"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <inset key="contentEdgeInsets" minX="7" minY="0.0" maxX="7" maxY="0.0"/>
@@ -86,12 +79,19 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="Город" id="bWW-Hb-cg4">
+                                                    <rect key="frame" x="11" y="0.0" width="160" height="49"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <connections>
                                             <outlet property="button" destination="qQR-XZ-n6Z" id="71h-i6-ssE"/>
-                                            <outlet property="titleLabel" destination="U1d-BO-GQt" id="fmx-xq-hci"/>
+                                            <outlet property="textView" destination="bWW-Hb-cg4" id="LFQ-3v-9Nd"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RubrikCell" rowHeight="40" id="9CV-CK-FDl" customClass="RubrikCell">
@@ -408,6 +408,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ButtonCell.h"/>
             <relationships>
                 <relationship kind="outlet" name="button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
@@ -433,6 +434,14 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RubrikCell.h"/>
             <relationships>
                 <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SearchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SearchViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="_header" candidateClass="UIView"/>
+                <relationship kind="outlet" name="_searchButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
         </class>
     </classes>

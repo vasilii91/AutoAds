@@ -10,8 +10,8 @@
 
 @implementation ButtonCell
 
-@synthesize titleLabel = _titleLabel;
-@synthesize button = _button;
+@synthesize textView;
+@synthesize button;
 @synthesize delegate = _delegate;
 
 
@@ -19,10 +19,12 @@
 
 - (void)awakeFromNib
 {
-    [_titleLabel setFont:[UIFont fontWithName:FONT_DINPro_BOLD size:13.]];
-    [_button.titleLabel setFont:[UIFont fontWithName:FONT_DINPro_BOLD size:14.]];
-    [_button setBackgroundImage:[[UIImage imageNamed:@"tableButton.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 4, 0, 4)] forState:UIControlStateNormal];
-    [_button addTarget:self action:@selector(onButton:) forControlEvents:UIControlEventTouchUpInside];
+    [self.textView setFont:[UIFont fontWithName:FONT_DINPro_BOLD size:12.]];
+    [self.textView setBackgroundColor:[UIColor clearColor]];
+    
+    [self.button.titleLabel setFont:[UIFont fontWithName:FONT_DINPro_BOLD size:14.]];
+    [self.button setBackgroundImage:[[UIImage imageNamed:@"tableButton.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 4, 0, 4)] forState:UIControlStateNormal];
+    [self.button addTarget:self action:@selector(onButton:) forControlEvents:UIControlEventTouchUpInside];
     
     UIImageView *iv = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"50.png"]];
     [self setBackgroundView:iv];
