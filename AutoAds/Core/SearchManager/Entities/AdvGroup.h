@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AdvField.h"
 
 enum
 {
@@ -33,5 +34,7 @@ typedef NSUInteger GroupType;
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, assign) GroupType type;
 @property (nonatomic, retain) NSArray *fields;
+
+- (NSArray *)getObligatoryFields;
 
 @end

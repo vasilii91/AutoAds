@@ -9,8 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "AdvField.h"
 #import "AdvGroup.h"
-#import "Entities/AdvFieldNames.h"
-#import "Entities/AdvValues.h"
+#import "AdvFieldNames.h"
+#import "AdvDictionaries.h"
+#import "AdvValues.h"
+#import "OrderedDictionary.h"
 
 @interface SearchManager : NSObject
 {
@@ -18,6 +20,6 @@
 }
 
 + (SearchManager *)sharedMySingleton;
-- (NSArray *)categoriesByRubric:(NSString *)rubric subrubric:(NSString *)subrubric;
+- (AdvGroup *)categoriesByRubric:(NSString *)rubric subrubric:(NSString *)subrubric;
 
 @end

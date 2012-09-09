@@ -12,6 +12,7 @@
 #import "ButtonCell.h"
 #import "PrettyViews.h"
 #import "SearchManager.h"
+#import "Search2ViewController.h"
 
 @interface SearchViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, ButtonCellDelegate>
 {
@@ -20,7 +21,8 @@
     
     SearchManager *searchManager;
     
-    AdvGroup *advGroup;
+    NSArray *fields;
+    AdvField *lastSelectedField;
 }
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 

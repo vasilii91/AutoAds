@@ -38,7 +38,7 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         searchManager = [SearchManager sharedMySingleton];
-        advGroup = [searchManager categoriesByRubric:nil subrubric:nil];
+        fields = [[searchManager categoriesByRubric:nil subrubric:nil] getObligatoryFields];
     }
     return self;
 }
@@ -61,13 +61,17 @@
     self.navigationItem.titleView = textLabel;
     UIBarButtonItem *bbi = [PrettyViews backBarButtonWithTarget:self action:@selector(goBack:)];
     self.navigationItem.leftBarButtonItem = bbi;
-    
-    
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
 }
 
 
@@ -91,7 +95,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [advGroup.fields count];
+    return [fields count];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -106,9 +110,13 @@
     ButtonCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     cell.delegate = self;
     
-    AdvField *field = [advGroup.fields objectAtIndex:indexPath.row];
-    [cell.textView setText:field.nameRussian];
-    [cell.button setTitle:field.valueByDefault forState:UIControlStateNormal];
+    AdvField *field = [fields objectAtIndex:indexPath.row];
+    NSString *title = field.nameRussian;
+    NSString *value = field.selectedValue == nil ? field.valueByDefault : field.selectedValue;
+    
+    [cell.textView setText:title];
+    [cell.button setTitle:value forState:UIControlStateNormal];
+    
     return cell;
 }
 
@@ -116,6 +124,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    lastSelectedField = [fields objectAtIndex:indexPath.row];
+    
+    Search2ViewController *search2VC = [Search2ViewController new];
+    search2VC.field = lastSelectedField;
+    [self.navigationController pushViewController:search2VC animated:YES];
 }
 
 @end

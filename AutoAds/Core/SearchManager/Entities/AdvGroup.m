@@ -10,4 +10,15 @@
 
 @implementation AdvGroup
 
+- (NSArray *)getObligatoryFields
+{
+    NSMutableArray *result = [NSMutableArray new];
+    for (AdvField *field in self.fields) {
+        if (field.isShownOnForm) {
+            [result addObject:field];
+        }
+    }
+    
+    return result;
+}
 @end

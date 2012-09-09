@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		10A3FB6315FC0F6C007FE234 /* SearchViewControllerOld.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A3FB6215FC0F6C007FE234 /* SearchViewControllerOld.m */; };
 		10A3FB6615FC1034007FE234 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A3FB6515FC1034007FE234 /* SearchViewController.m */; };
+		10BE55B215FCF609008983A6 /* Search2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BE55B115FCF609008983A6 /* Search2ViewController.m */; };
+		10BE55BF15FD0329008983A6 /* SelectValuePhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BE55BE15FD0329008983A6 /* SelectValuePhotoView.m */; };
+		10BE55C315FD03AD008983A6 /* SelectValueStringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BE55C215FD03AD008983A6 /* SelectValueStringView.m */; };
+		10BE55C815FD0546008983A6 /* SelectValueDictionaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BE55C715FD0546008983A6 /* SelectValueDictionaryView.m */; };
+		10BE55CA15FD0598008983A6 /* SelectValueDictionaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10BE55C915FD0598008983A6 /* SelectValueDictionaryView.xib */; };
+		10BE55D115FD08B3008983A6 /* SelectValueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BE55D015FD08B3008983A6 /* SelectValueCell.m */; };
+		10BE55D315FD0929008983A6 /* SelectValueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10BE55D215FD0929008983A6 /* SelectValueCell.xib */; };
+		10BE55D815FD0E5B008983A6 /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BE55D715FD0E5B008983A6 /* OrderedDictionary.m */; };
+		10BE55DA15FD21CE008983A6 /* SelectValueStringView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10BE55D915FD21CE008983A6 /* SelectValueStringView.xib */; };
+		10BE55DD15FD321A008983A6 /* AdvDictionaries.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BE55DC15FD3219008983A6 /* AdvDictionaries.m */; };
 		BEC9940615F88A8A006BDCA9 /* DINPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC993E015F88A8A006BDCA9 /* DINPro-Black.otf */; };
 		BEC9940715F88A8A006BDCA9 /* DINPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC993E115F88A8A006BDCA9 /* DINPro-Bold.otf */; };
 		BEC9940815F88A8A006BDCA9 /* DINPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC993E215F88A8A006BDCA9 /* DINPro-Light.otf */; };
@@ -74,6 +84,24 @@
 		10A3FB6515FC1034007FE234 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		10BE55AE15FC148D008983A6 /* AdvFieldNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvFieldNames.h; path = SearchManager/Entities/AdvFieldNames.h; sourceTree = "<group>"; };
 		10BE55AF15FC14A4008983A6 /* AdvValues.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AdvValues.h; path = SearchManager/Entities/AdvValues.h; sourceTree = "<group>"; };
+		10BE55B015FCF609008983A6 /* Search2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Search2ViewController.h; sourceTree = "<group>"; };
+		10BE55B115FCF609008983A6 /* Search2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Search2ViewController.m; sourceTree = "<group>"; };
+		10BE55BD15FD0329008983A6 /* SelectValuePhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectValuePhotoView.h; sourceTree = "<group>"; };
+		10BE55BE15FD0329008983A6 /* SelectValuePhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectValuePhotoView.m; sourceTree = "<group>"; };
+		10BE55C115FD03AD008983A6 /* SelectValueStringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectValueStringView.h; path = SelectValueStringView/SelectValueStringView.h; sourceTree = "<group>"; };
+		10BE55C215FD03AD008983A6 /* SelectValueStringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectValueStringView.m; path = SelectValueStringView/SelectValueStringView.m; sourceTree = "<group>"; };
+		10BE55C615FD0546008983A6 /* SelectValueDictionaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectValueDictionaryView.h; path = SelectValueDictionaryView/SelectValueDictionaryView.h; sourceTree = "<group>"; };
+		10BE55C715FD0546008983A6 /* SelectValueDictionaryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectValueDictionaryView.m; path = SelectValueDictionaryView/SelectValueDictionaryView.m; sourceTree = "<group>"; };
+		10BE55C915FD0598008983A6 /* SelectValueDictionaryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SelectValueDictionaryView.xib; path = SelectValueDictionaryView/SelectValueDictionaryView.xib; sourceTree = "<group>"; };
+		10BE55CF15FD08B2008983A6 /* SelectValueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectValueCell.h; sourceTree = "<group>"; };
+		10BE55D015FD08B3008983A6 /* SelectValueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectValueCell.m; sourceTree = "<group>"; };
+		10BE55D215FD0929008983A6 /* SelectValueCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectValueCell.xib; sourceTree = "<group>"; };
+		10BE55D415FD0ADA008983A6 /* SelectValueDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectValueDelegate.h; sourceTree = "<group>"; };
+		10BE55D615FD0E5B008983A6 /* OrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedDictionary.h; sourceTree = "<group>"; };
+		10BE55D715FD0E5B008983A6 /* OrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedDictionary.m; sourceTree = "<group>"; };
+		10BE55D915FD21CE008983A6 /* SelectValueStringView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SelectValueStringView.xib; path = SelectValueStringView/SelectValueStringView.xib; sourceTree = "<group>"; };
+		10BE55DB15FD3219008983A6 /* AdvDictionaries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvDictionaries.h; path = SearchManager/Entities/AdvDictionaries.h; sourceTree = "<group>"; };
+		10BE55DC15FD3219008983A6 /* AdvDictionaries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdvDictionaries.m; path = SearchManager/Entities/AdvDictionaries.m; sourceTree = "<group>"; };
 		BEC993E015F88A8A006BDCA9 /* DINPro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Black.otf"; sourceTree = "<group>"; };
 		BEC993E115F88A8A006BDCA9 /* DINPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Bold.otf"; sourceTree = "<group>"; };
 		BEC993E215F88A8A006BDCA9 /* DINPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Light.otf"; sourceTree = "<group>"; };
@@ -170,6 +198,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10BE55B815FD02F1008983A6 /* SelectValueViews */ = {
+			isa = PBXGroup;
+			children = (
+				10BE55D415FD0ADA008983A6 /* SelectValueDelegate.h */,
+				10BE55C415FD0523008983A6 /* SelectValueDictionaryView */,
+				10BE55C015FD035B008983A6 /* SelectValueStringView */,
+				10BE55BC15FD0329008983A6 /* SelectValuePhotoView */,
+			);
+			path = SelectValueViews;
+			sourceTree = "<group>";
+		};
+		10BE55BC15FD0329008983A6 /* SelectValuePhotoView */ = {
+			isa = PBXGroup;
+			children = (
+				10BE55BD15FD0329008983A6 /* SelectValuePhotoView.h */,
+				10BE55BE15FD0329008983A6 /* SelectValuePhotoView.m */,
+			);
+			path = SelectValuePhotoView;
+			sourceTree = "<group>";
+		};
+		10BE55C015FD035B008983A6 /* SelectValueStringView */ = {
+			isa = PBXGroup;
+			children = (
+				10BE55C115FD03AD008983A6 /* SelectValueStringView.h */,
+				10BE55C215FD03AD008983A6 /* SelectValueStringView.m */,
+				10BE55D915FD21CE008983A6 /* SelectValueStringView.xib */,
+			);
+			name = SelectValueStringView;
+			sourceTree = "<group>";
+		};
+		10BE55C415FD0523008983A6 /* SelectValueDictionaryView */ = {
+			isa = PBXGroup;
+			children = (
+				10BE55C615FD0546008983A6 /* SelectValueDictionaryView.h */,
+				10BE55C715FD0546008983A6 /* SelectValueDictionaryView.m */,
+				10BE55C915FD0598008983A6 /* SelectValueDictionaryView.xib */,
+			);
+			name = SelectValueDictionaryView;
+			sourceTree = "<group>";
+		};
+		10BE55D515FD0E5B008983A6 /* OrderedDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				10BE55D615FD0E5B008983A6 /* OrderedDictionary.h */,
+				10BE55D715FD0E5B008983A6 /* OrderedDictionary.m */,
+			);
+			path = OrderedDictionary;
+			sourceTree = "<group>";
+		};
 		BEC993DE15F88A8A006BDCA9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +352,8 @@
 			children = (
 				10A3FB6415FC1034007FE234 /* SearchViewController.h */,
 				10A3FB6515FC1034007FE234 /* SearchViewController.m */,
+				10BE55B015FCF609008983A6 /* Search2ViewController.h */,
+				10BE55B115FCF609008983A6 /* Search2ViewController.m */,
 				BEC9943115F88B5B006BDCA9 /* SearchViewControllerOld.h */,
 				10A3FB6215FC0F6C007FE234 /* SearchViewControllerOld.m */,
 			);
@@ -289,6 +368,9 @@
 				BEC9943A15F88B67006BDCA9 /* ButtonCell.m */,
 				BEC9943C15F88B67006BDCA9 /* RubrikCell.h */,
 				BEC9943D15F88B67006BDCA9 /* RubrikCell.m */,
+				10BE55CF15FD08B2008983A6 /* SelectValueCell.h */,
+				10BE55D015FD08B3008983A6 /* SelectValueCell.m */,
+				10BE55D215FD0929008983A6 /* SelectValueCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -296,6 +378,7 @@
 		BEC9944015F88B75006BDCA9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				10BE55D515FD0E5B008983A6 /* OrderedDictionary */,
 				BEF6391015F8EE3F00B0CAD0 /* SearchManager */,
 				BEC9944C15F89681006BDCA9 /* Extensions */,
 				BEC9944515F88E1F006BDCA9 /* Views */,
@@ -374,6 +457,8 @@
 			children = (
 				10BE55AE15FC148D008983A6 /* AdvFieldNames.h */,
 				10BE55AF15FC14A4008983A6 /* AdvValues.h */,
+				10BE55DB15FD3219008983A6 /* AdvDictionaries.h */,
+				10BE55DC15FD3219008983A6 /* AdvDictionaries.m */,
 				BEF6391915F9E8C000B0CAD0 /* AdvEnums.h */,
 				BEF6391615F9E8A400B0CAD0 /* AdvField.h */,
 				BEF6391715F9E8A400B0CAD0 /* AdvField.m */,
@@ -418,6 +503,7 @@
 				DDE5425E15D93FF500172CE6 /* KDAppDelegate.h */,
 				DDE5425F15D93FF500172CE6 /* KDAppDelegate.m */,
 				BEC9943815F88B67006BDCA9 /* Cells */,
+				10BE55B815FD02F1008983A6 /* SelectValueViews */,
 				BEC9942815F88B5B006BDCA9 /* ViewControllers */,
 				BEC9944015F88B75006BDCA9 /* Core */,
 				DDE5425615D93FF500172CE6 /* Supporting Files */,
@@ -529,6 +615,9 @@
 				BEC9942715F88A8A006BDCA9 /* tableButton@2x.png in Resources */,
 				BEC9943515F88B5B006BDCA9 /* MainFlow.storyboard in Resources */,
 				BEF6390515F8D2D000B0CAD0 /* HelpfulInfoViewController.xib in Resources */,
+				10BE55CA15FD0598008983A6 /* SelectValueDictionaryView.xib in Resources */,
+				10BE55D315FD0929008983A6 /* SelectValueCell.xib in Resources */,
+				10BE55DA15FD21CE008983A6 /* SelectValueStringView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +661,13 @@
 				BEF6391C15F9FD5A00B0CAD0 /* AdvGroup.m in Sources */,
 				10A3FB6315FC0F6C007FE234 /* SearchViewControllerOld.m in Sources */,
 				10A3FB6615FC1034007FE234 /* SearchViewController.m in Sources */,
+				10BE55B215FCF609008983A6 /* Search2ViewController.m in Sources */,
+				10BE55BF15FD0329008983A6 /* SelectValuePhotoView.m in Sources */,
+				10BE55C315FD03AD008983A6 /* SelectValueStringView.m in Sources */,
+				10BE55C815FD0546008983A6 /* SelectValueDictionaryView.m in Sources */,
+				10BE55D115FD08B3008983A6 /* SelectValueCell.m in Sources */,
+				10BE55D815FD0E5B008983A6 /* OrderedDictionary.m in Sources */,
+				10BE55DD15FD321A008983A6 /* AdvDictionaries.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

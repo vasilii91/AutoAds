@@ -1,0 +1,44 @@
+//
+//  SelectValueStringView.m
+//  AutoAds
+//
+//  Created by Vasilii Kasnitski on 9/9/12.
+//  Copyright (c) 2012 Kyr Dunenkoff. All rights reserved.
+//
+
+#import "SelectValueStringView.h"
+
+@implementation SelectValueStringView
+@synthesize textFieldValue;
+@synthesize delegate;
+
+#pragma mark - Initialization
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+}
+
++ (SelectValueStringView *)loadView
+{
+    return [[[NSBundle mainBundle] loadNibNamed:@"SelectValueStringView" owner:nil options:nil] lastObject];
+}
+
+
+#pragma mark - Actions
+
+- (IBAction)clickOnOkButton:(id)sender
+{
+    [self.textFieldValue resignFirstResponder];
+    [delegate valueWasSelected:selectedValue];
+}
+
+
+#pragma mark - @protocol UITextFieldDelegate <NSObject>
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    selectedValue = textField.text;
+}
+
+@end
