@@ -10,4 +10,8 @@
 
 @interface Photo : NSObject
 
+@property (nonatomic, retain) NSData *large;
+@property (nonatomic, retain) NSData *small;
+@property (nonatomic, retain) NSString *Description;
+
 @end

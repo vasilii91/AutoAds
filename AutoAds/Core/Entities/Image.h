@@ -10,4 +10,11 @@
 
 @interface Image : NSObject
 
+@property (nonatomic, retain) NSString *path;
+@property (nonatomic, retain) NSString *url;
+@property (nonatomic, assign) NSInteger w;
+@property (nonatomic, assign) NSInteger h;
+@property (nonatomic, retain) NSString *mime;
+@property (nonatomic, assign) NSInteger size;
+
 @end

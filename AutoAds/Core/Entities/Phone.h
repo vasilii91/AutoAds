@@ -10,4 +10,8 @@
 
 @interface Phone : NSObject
 
+@property (nonatomic, assign) NSInteger Code;
+@property (nonatomic, assign) NSInteger Number;
+@property (nonatomic, assign) NSInteger Extra;
+
 @end

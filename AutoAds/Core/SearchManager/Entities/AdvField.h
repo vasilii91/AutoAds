@@ -14,7 +14,8 @@ enum
     ValueTypeString,
     ValueTypeBoolean,
     ValueTypeDictionary,
-    ValueTypePhoto
+    ValueTypePhoto,
+    ValueTypeFromInternet,
 };
 typedef NSUInteger ValueType;
 

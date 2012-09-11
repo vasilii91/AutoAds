@@ -10,4 +10,7 @@
 
 @interface OptionsCategory : NSObject
 
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) NSArray *fields;
+
 @end

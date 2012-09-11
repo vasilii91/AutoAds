@@ -10,4 +10,9 @@
 
 @interface VehicleBrand : NSObject
 
+@property (nonatomic, assign) NSInteger id;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) NSArray *subrubrics;
+@property (nonatomic, assign) NSInteger order;
+
 @end

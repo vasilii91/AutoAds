@@ -11,10 +11,6 @@
 
 @interface AdvDictionaries : NSObject
 
-+ (NSDictionary *)AdPeriods;
-+ (NSDictionary *)Bools;
-
-
 #pragma mark - Cities
 
 + (NSDictionary *)Cities2;
@@ -67,5 +63,41 @@
 + (NSDictionary *)TiresDiameters;
 + (NSDictionary *)WheelDiameters;
 + (NSDictionary *)WheelSorties;
++ (NSDictionary *)WheelWidthes;
++ (NSDictionary *)WheelHoleDiameters;
++ (NSDictionary *)WheelHoleCounts;
++ (NSDictionary *)WheelTypes;
++ (NSDictionary *)Seasonalities;
++ (NSDictionary *)TrailerDestinies;
++ (NSDictionary *)AdPeriods;
++ (NSDictionary *)Bools;
++ (NSDictionary *)GearsStates;
++ (NSDictionary *)CarStates;
++ (NSDictionary *)HydrosStates;
++ (NSDictionary *)EngineCapacities;
++ (NSDictionary *)FuelTypes;
++ (NSDictionary *)Rudder;
++ (NSDictionary *)GearboxTypes;
++ (NSDictionary *)EngineTypes;
++ (NSDictionary *)Years;
++ (NSDictionary *)Counts;
++ (NSDictionary *)ModerateStatuses;
+
+
+#pragma mark - Subrubrics
+
++ (NSDictionary *)SubrubricsMotors;
++ (NSDictionary *)SubrubricsCommercial;
++ (NSDictionary *)SubrubricsMoto;
++ (NSDictionary *)SubrubricsWater;
++ (NSDictionary *)SubrubricsParts;
+
+
+#pragma mark - Main
+
++ (NSDictionary *)Rubrics;
++ (NSDictionary *)HostLinks;
++ (NSDictionary *)Regions;
+
 
 @end

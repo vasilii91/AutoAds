@@ -10,26 +10,6 @@
 
 @implementation AdvDictionaries
 
-+ (NSDictionary *)AdPeriods
-{
-    OrderedDictionary *dictionary = [OrderedDictionary new];
-    [dictionary setValue:@"0" forKey:@"2 недели"];
-    [dictionary setValue:@"1" forKey:@"4 недели"];
-    [dictionary setValue:@"2" forKey:@"6 недели"];
-    [dictionary setValue:@"3" forKey:@"8 недели"];
-    
-    return dictionary;
-}
-
-+ (NSDictionary *)Bools
-{
-    OrderedDictionary *dictionary = [OrderedDictionary new];
-    [dictionary setValue:@"0" forKey:@"Да"];
-    [dictionary setValue:@"1" forKey:@"Нет"];
-    
-    return dictionary;
-}
-
 
 #pragma mark - Cities
 
@@ -847,4 +827,353 @@
     return dictionary;
 }
 
++ (NSDictionary *)WheelWidthes
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    for (float i = 4; i <= 11; i += 0.5) {
+        NSString *value = [NSString stringWithFormat:@"%f", i];
+        [dictionary setValue:value forKey:value];
+    }
+    
+    return dictionary;
+}
+
++ (NSDictionary *)WheelHoleDiameters
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"98" forKey:@"98"];
+    [dictionary setValue:@"100" forKey:@"100"];
+    [dictionary setValue:@"108" forKey:@"108"];
+    [dictionary setValue:@"110" forKey:@"110"];
+    [dictionary setValue:@"112" forKey:@"112"];
+    [dictionary setValue:@"114" forKey:@"114"];
+    [dictionary setValue:@"114.3" forKey:@"114.3"];
+    [dictionary setValue:@"115" forKey:@"115"];
+    [dictionary setValue:@"118" forKey:@"118"];
+    [dictionary setValue:@"120" forKey:@"120"];
+    [dictionary setValue:@"120.6" forKey:@"120.6"];
+    [dictionary setValue:@"120.65" forKey:@"120.65"];
+    [dictionary setValue:@"120.7" forKey:@"120.7"];
+    [dictionary setValue:@"127" forKey:@"127"];
+    [dictionary setValue:@"130" forKey:@"130"];
+    [dictionary setValue:@"135" forKey:@"135"];
+    [dictionary setValue:@"139" forKey:@"139"];
+    [dictionary setValue:@"139.7" forKey:@"139.7"];
+    [dictionary setValue:@"150" forKey:@"150"];
+    [dictionary setValue:@"160" forKey:@"160"];
+    [dictionary setValue:@"165" forKey:@"165"];
+    [dictionary setValue:@"165.1" forKey:@"165.1"];
+    [dictionary setValue:@"170" forKey:@"170"];
+    [dictionary setValue:@"180" forKey:@"180"];
+    [dictionary setValue:@"190" forKey:@"190"];
+    [dictionary setValue:@"205" forKey:@"205"];
+    [dictionary setValue:@"225" forKey:@"225"];
+    [dictionary setValue:@"256" forKey:@"256"];
+    [dictionary setValue:@"275" forKey:@"275"];
+    [dictionary setValue:@"335" forKey:@"335"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)WheelHoleCounts
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    for (int i = 3; i <= 10; i += 1) {
+        NSString *value = [NSString stringWithFormat:@"%d", i];
+        [dictionary setValue:value forKey:value];
+    }
+    
+    return dictionary;
+}
+
++ (NSDictionary *)WheelTypes
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"1" forKey:@"Штампованные"];
+    [dictionary setValue:@"2" forKey:@"Литые"];
+    [dictionary setValue:@"3" forKey:@"Кованые"];
+    [dictionary setValue:@"4" forKey:@"Сборные"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)Seasonalities
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"2" forKey:@"Зимние"];
+    [dictionary setValue:@"3" forKey:@"Летние"];
+    [dictionary setValue:@"1" forKey:@"Всесезонные"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)TrailerDestinies
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"1" forKey:@"Для перевозки грузов"];
+    [dictionary setValue:@"2" forKey:@"Для катера, лодки, гидроцикла"];
+    [dictionary setValue:@"3" forKey:@"Для снегоходов, квадроциклов"];
+    [dictionary setValue:@"4" forKey:@"Легковые автовозы"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)AdPeriods
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"0" forKey:@"2 недели"];
+    [dictionary setValue:@"1" forKey:@"4 недели"];
+    [dictionary setValue:@"2" forKey:@"6 недели"];
+    [dictionary setValue:@"3" forKey:@"8 недели"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)Bools
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"0" forKey:@"Да"];
+    [dictionary setValue:@"1" forKey:@"Нет"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)GearsStates
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"10" forKey:@"Б/у"];
+    [dictionary setValue:@"11" forKey:@"Новое"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)WaterStates
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"0" forKey:@"отличное"];
+    [dictionary setValue:@"1" forKey:@"хорошее"];
+    [dictionary setValue:@"2" forKey:@"среднее"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)CarStates
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"0" forKey:@"Отличное"];
+    [dictionary setValue:@"1" forKey:@"Хорошее"];
+    [dictionary setValue:@"2" forKey:@"Среднее"];
+    [dictionary setValue:@"3" forKey:@"Битый"];
+    [dictionary setValue:@"4" forKey:@"Аварийный"];
+    [dictionary setValue:@"5" forKey:@"На запчасти"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)HydrosStates
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"1" forKey:@"Cпортивно-туристический"];
+    [dictionary setValue:@"2" forKey:@"Спортивный"];
+    [dictionary setValue:@"3" forKey:@"Спортивный стоячий"];
+    [dictionary setValue:@"4" forKey:@"Туристический"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)EngineCapacities
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    for (float i = 0.5; i <= 8.0; i += 0.1) {
+        NSString *value = [NSString stringWithFormat:@"%f", i];
+        [dictionary setValue:value forKey:value];
+    }
+    [dictionary setValue:@"999" forKey:@"более 8.0"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)FuelTypes
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"4" forKey:@"Дизельное"];
+    [dictionary setValue:@"2" forKey:@"Бензин"];
+    [dictionary setValue:@"1" forKey:@"Газ"];
+    [dictionary setValue:@"8" forKey:@"Электро"];
+    [dictionary setValue:@"16" forKey:@"Гибрид"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)Rudder
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"0" forKey:@"Руль левый"];
+    [dictionary setValue:@"1" forKey:@"Руль правый"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)GearboxTypes
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"0" forKey:@"Автомат"];
+    [dictionary setValue:@"1" forKey:@"Вариатор"];
+    [dictionary setValue:@"2" forKey:@"Механическая"];
+    [dictionary setValue:@"3" forKey:@"Роботизированная"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)EngineTypes
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"1" forKey:@"Карбюраторный"];
+    [dictionary setValue:@"2" forKey:@"Инжекторный"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)Years
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    NSInteger currentYear = [[NSDate date] year];
+    
+    for (int i = 1950; i <= currentYear; i += 1) {
+        NSString *value = [NSString stringWithFormat:@"%d", i];
+        [dictionary setValue:value forKey:value];
+    }
+    
+    return dictionary;
+}
+
++ (NSDictionary *)Counts
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    
+    for (int i = 1; i <= 10; i += 1) {
+        NSString *value = [NSString stringWithFormat:@"%d", i];
+        [dictionary setValue:value forKey:value];
+    }
+    
+    return dictionary;
+}
+
++ (NSDictionary *)ModerateStatuses
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"1" forKey:@"Запрещается размещение дубликатов объявлений в одном разделе."];
+    [dictionary setValue:@"2" forKey:@"Информация, указанная в объявлении, должна соответствовать разделу."];
+    [dictionary setValue:@"3" forKey:@"Запрещается использовать в объявлениях информацию рекламного характера, ссылки на сайты, документы."];
+    [dictionary setValue:@"4" forKey:@"Текст объявления должен быть набран кириллицей. Запрещается набирать текст или некоторые слова целиком заглавными буквами, выделять цветом, использовать посторонние символы и так далее."];
+    [dictionary setValue:@"5" forKey:@"Запрещается размещать объявления с недостоверными данными."];
+    [dictionary setValue:@"6" forKey:@"Не верно указан формат  мобильного телефона. Код оператора (три цифры)  надо писать отдельно. Пример правильного заполнения:  8 (922) 1234567."];
+    
+    return dictionary;
+}
+
+
+#pragma mark - Subrubrics
+
++ (NSDictionary *)SubrubricsMotors
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"rus" forKey:@"Отечественные авто"];
+    [dictionary setValue:@"foreign" forKey:@"Иномарки"];
+    [dictionary setValue:@"trailers" forKey:@"Прицепы"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)SubrubricsCommercial
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"buses" forKey:@"Автобусы"];
+    [dictionary setValue:@"trucks" forKey:@"Грузовые автомобили"];
+    [dictionary setValue:@"small" forKey:@"Малый коммерческий транспорт"];
+    [dictionary setValue:@"trailers" forKey:@"Грузовые прицепы и полуприцепы"];
+    [dictionary setValue:@"special" forKey:@"Спецтехника"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)SubrubricsMoto
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"bikes" forKey:@"Мотоциклы и мопеды"];
+    [dictionary setValue:@"quadro" forKey:@"Квадроциклы"];
+    [dictionary setValue:@"scooter" forKey:@"Скутеры"];
+    [dictionary setValue:@"snow" forKey:@"Снегоходы"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)SubrubricsWater
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"hydros" forKey:@"Гидроциклы"];
+    [dictionary setValue:@"yachts" forKey:@"Катера и яхты"];
+    [dictionary setValue:@"boats" forKey:@"Лодки"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)SubrubricsParts
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"wheels" forKey:@"Диски"];
+    [dictionary setValue:@"tires" forKey:@"Шины"];
+    
+    return dictionary;
+}
+
+
+#pragma mark - Main
+
++ (NSDictionary *)Rubrics
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"motors" forKey:@"Легковые автомобили"];
+    [dictionary setValue:@"commercial" forKey:@"Коммерческий транспорт"];
+    [dictionary setValue:@"moto" forKey:@"Мототехника"];
+    [dictionary setValue:@"water" forKey:@"Водный транспорт"];
+    [dictionary setValue:@"gears" forKey:@"Шины и диски"];
+    [dictionary setValue:@"parts" forKey:@"Автозапчасти"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)HostLinks
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"74" forKey:@"autochel.ru"];
+    [dictionary setValue:@"2" forKey:@"102km.ru"];
+    [dictionary setValue:@"61" forKey:@"161auto.ru"];
+    [dictionary setValue:@"72" forKey:@"72avto.ru"];
+    [dictionary setValue:@"59" forKey:@"avto59.ru"];
+    [dictionary setValue:@"63" forKey:@"doroga63.ru"];
+    [dictionary setValue:@"34" forKey:@"34auto.ru"];
+    [dictionary setValue:@"16" forKey:@"116auto.ru"];
+    [dictionary setValue:@"29" forKey:@"29.ru"];
+    [dictionary setValue:@"76" forKey:@"76.ru"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)Regions
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"74" forKey:@"Челябинская область"];
+    [dictionary setValue:@"2" forKey:@"Республика Башкортостан"];
+    [dictionary setValue:@"61" forKey:@"Ростовская область"];
+    [dictionary setValue:@"72" forKey:@"Тюменская область"];
+    [dictionary setValue:@"59" forKey:@"Пермская область"];
+    [dictionary setValue:@"63" forKey:@"Самарская область"];
+    [dictionary setValue:@"34" forKey:@"Волгоградская область"];
+    [dictionary setValue:@"16" forKey:@"Республика Татарстан"];
+    [dictionary setValue:@"29" forKey:@"Архангельская область"];
+    [dictionary setValue:@"76" forKey:@"Ярославская область"];
+    
+    return dictionary;
+}
 @end

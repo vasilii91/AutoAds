@@ -19,6 +19,14 @@
 		10BE55D815FD0E5B008983A6 /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BE55D715FD0E5B008983A6 /* OrderedDictionary.m */; };
 		10BE55DA15FD21CE008983A6 /* SelectValueStringView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10BE55D915FD21CE008983A6 /* SelectValueStringView.xib */; };
 		10BE55DD15FD321A008983A6 /* AdvDictionaries.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BE55DC15FD3219008983A6 /* AdvDictionaries.m */; };
+		BE2F84F415FF2B9A008859B1 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2F84F315FF2B9A008859B1 /* Image.m */; };
+		BE2F84F715FF2C3C008859B1 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2F84F615FF2C3C008859B1 /* Photo.m */; };
+		BE2F84FA15FF2CE2008859B1 /* Phone.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2F84F915FF2CE2008859B1 /* Phone.m */; };
+		BE2F84FD15FF2EDA008859B1 /* Option.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2F84FC15FF2EDA008859B1 /* Option.m */; };
+		BE2F850015FF2FAE008859B1 /* OptionsCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2F84FF15FF2FAE008859B1 /* OptionsCategory.m */; };
+		BE2F850315FF3000008859B1 /* VehicleModification.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2F850215FF3000008859B1 /* VehicleModification.m */; };
+		BE2F850615FF303C008859B1 /* VehicleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2F850515FF303C008859B1 /* VehicleModel.m */; };
+		BE2F850915FF30D4008859B1 /* VehicleBrand.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2F850815FF30D4008859B1 /* VehicleBrand.m */; };
 		BEC9940615F88A8A006BDCA9 /* DINPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC993E015F88A8A006BDCA9 /* DINPro-Black.otf */; };
 		BEC9940715F88A8A006BDCA9 /* DINPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC993E115F88A8A006BDCA9 /* DINPro-Bold.otf */; };
 		BEC9940815F88A8A006BDCA9 /* DINPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = BEC993E215F88A8A006BDCA9 /* DINPro-Light.otf */; };
@@ -83,7 +91,6 @@
 		10A3FB6415FC1034007FE234 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		10A3FB6515FC1034007FE234 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		10BE55AE15FC148D008983A6 /* AdvFieldNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvFieldNames.h; path = SearchManager/Entities/AdvFieldNames.h; sourceTree = "<group>"; };
-		10BE55AF15FC14A4008983A6 /* AdvValues.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AdvValues.h; path = SearchManager/Entities/AdvValues.h; sourceTree = "<group>"; };
 		10BE55B015FCF609008983A6 /* Search2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Search2ViewController.h; sourceTree = "<group>"; };
 		10BE55B115FCF609008983A6 /* Search2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Search2ViewController.m; sourceTree = "<group>"; };
 		10BE55BD15FD0329008983A6 /* SelectValuePhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectValuePhotoView.h; sourceTree = "<group>"; };
@@ -102,6 +109,22 @@
 		10BE55D915FD21CE008983A6 /* SelectValueStringView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SelectValueStringView.xib; path = SelectValueStringView/SelectValueStringView.xib; sourceTree = "<group>"; };
 		10BE55DB15FD3219008983A6 /* AdvDictionaries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvDictionaries.h; path = SearchManager/Entities/AdvDictionaries.h; sourceTree = "<group>"; };
 		10BE55DC15FD3219008983A6 /* AdvDictionaries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdvDictionaries.m; path = SearchManager/Entities/AdvDictionaries.m; sourceTree = "<group>"; };
+		BE2F84F215FF2B9A008859B1 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Image.h; path = Entities/Image.h; sourceTree = "<group>"; };
+		BE2F84F315FF2B9A008859B1 /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Image.m; path = Entities/Image.m; sourceTree = "<group>"; };
+		BE2F84F515FF2C3C008859B1 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photo.h; path = Entities/Photo.h; sourceTree = "<group>"; };
+		BE2F84F615FF2C3C008859B1 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photo.m; path = Entities/Photo.m; sourceTree = "<group>"; };
+		BE2F84F815FF2CE2008859B1 /* Phone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Phone.h; path = Entities/Phone.h; sourceTree = "<group>"; };
+		BE2F84F915FF2CE2008859B1 /* Phone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Phone.m; path = Entities/Phone.m; sourceTree = "<group>"; };
+		BE2F84FB15FF2EDA008859B1 /* Option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Option.h; path = Entities/Option.h; sourceTree = "<group>"; };
+		BE2F84FC15FF2EDA008859B1 /* Option.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Option.m; path = Entities/Option.m; sourceTree = "<group>"; };
+		BE2F84FE15FF2FAE008859B1 /* OptionsCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OptionsCategory.h; path = Entities/OptionsCategory.h; sourceTree = "<group>"; };
+		BE2F84FF15FF2FAE008859B1 /* OptionsCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OptionsCategory.m; path = Entities/OptionsCategory.m; sourceTree = "<group>"; };
+		BE2F850115FF3000008859B1 /* VehicleModification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VehicleModification.h; path = Entities/VehicleModification.h; sourceTree = "<group>"; };
+		BE2F850215FF3000008859B1 /* VehicleModification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VehicleModification.m; path = Entities/VehicleModification.m; sourceTree = "<group>"; };
+		BE2F850415FF303C008859B1 /* VehicleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VehicleModel.h; path = Entities/VehicleModel.h; sourceTree = "<group>"; };
+		BE2F850515FF303C008859B1 /* VehicleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VehicleModel.m; path = Entities/VehicleModel.m; sourceTree = "<group>"; };
+		BE2F850715FF30D3008859B1 /* VehicleBrand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VehicleBrand.h; path = Entities/VehicleBrand.h; sourceTree = "<group>"; };
+		BE2F850815FF30D4008859B1 /* VehicleBrand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VehicleBrand.m; path = Entities/VehicleBrand.m; sourceTree = "<group>"; };
 		BEC993E015F88A8A006BDCA9 /* DINPro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Black.otf"; sourceTree = "<group>"; };
 		BEC993E115F88A8A006BDCA9 /* DINPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Bold.otf"; sourceTree = "<group>"; };
 		BEC993E215F88A8A006BDCA9 /* DINPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Light.otf"; sourceTree = "<group>"; };
@@ -247,6 +270,29 @@
 			path = OrderedDictionary;
 			sourceTree = "<group>";
 		};
+		BE2F84F015FF2B50008859B1 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BE2F84F215FF2B9A008859B1 /* Image.h */,
+				BE2F84F315FF2B9A008859B1 /* Image.m */,
+				BE2F84F515FF2C3C008859B1 /* Photo.h */,
+				BE2F84F615FF2C3C008859B1 /* Photo.m */,
+				BE2F84F815FF2CE2008859B1 /* Phone.h */,
+				BE2F84F915FF2CE2008859B1 /* Phone.m */,
+				BE2F84FB15FF2EDA008859B1 /* Option.h */,
+				BE2F84FC15FF2EDA008859B1 /* Option.m */,
+				BE2F84FE15FF2FAE008859B1 /* OptionsCategory.h */,
+				BE2F84FF15FF2FAE008859B1 /* OptionsCategory.m */,
+				BE2F850115FF3000008859B1 /* VehicleModification.h */,
+				BE2F850215FF3000008859B1 /* VehicleModification.m */,
+				BE2F850415FF303C008859B1 /* VehicleModel.h */,
+				BE2F850515FF303C008859B1 /* VehicleModel.m */,
+				BE2F850715FF30D3008859B1 /* VehicleBrand.h */,
+				BE2F850815FF30D4008859B1 /* VehicleBrand.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
 		BEC993DE15F88A8A006BDCA9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -378,9 +424,10 @@
 		BEC9944015F88B75006BDCA9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				BE2F84F015FF2B50008859B1 /* Entities */,
+				BEC9944C15F89681006BDCA9 /* Extensions */,
 				10BE55D515FD0E5B008983A6 /* OrderedDictionary */,
 				BEF6391015F8EE3F00B0CAD0 /* SearchManager */,
-				BEC9944C15F89681006BDCA9 /* Extensions */,
 				BEC9944515F88E1F006BDCA9 /* Views */,
 				BEC9944915F8937C006BDCA9 /* Constants.h */,
 				BEF6390915F8E1EA00B0CAD0 /* logger.h */,
@@ -456,7 +503,6 @@
 			isa = PBXGroup;
 			children = (
 				10BE55AE15FC148D008983A6 /* AdvFieldNames.h */,
-				10BE55AF15FC14A4008983A6 /* AdvValues.h */,
 				10BE55DB15FD3219008983A6 /* AdvDictionaries.h */,
 				10BE55DC15FD3219008983A6 /* AdvDictionaries.m */,
 				BEF6391915F9E8C000B0CAD0 /* AdvEnums.h */,
@@ -668,6 +714,14 @@
 				10BE55D115FD08B3008983A6 /* SelectValueCell.m in Sources */,
 				10BE55D815FD0E5B008983A6 /* OrderedDictionary.m in Sources */,
 				10BE55DD15FD321A008983A6 /* AdvDictionaries.m in Sources */,
+				BE2F84F415FF2B9A008859B1 /* Image.m in Sources */,
+				BE2F84F715FF2C3C008859B1 /* Photo.m in Sources */,
+				BE2F84FA15FF2CE2008859B1 /* Phone.m in Sources */,
+				BE2F84FD15FF2EDA008859B1 /* Option.m in Sources */,
+				BE2F850015FF2FAE008859B1 /* OptionsCategory.m in Sources */,
+				BE2F850315FF3000008859B1 /* VehicleModification.m in Sources */,
+				BE2F850615FF303C008859B1 /* VehicleModel.m in Sources */,
+				BE2F850915FF30D4008859B1 /* VehicleBrand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
