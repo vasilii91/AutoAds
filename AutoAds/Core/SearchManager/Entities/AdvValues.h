@@ -21,32 +21,6 @@
 #define V_AD_PERIODS_8_WEEKS_RUS @"8 недель"
 #define V_AD_PERIODS_8_WEEKS_ENG @"3"
 
-
-
-//#define V__RUS @""
-//#define V__ENG @""
-//
-//#define V__RUS @""
-//#define V__ENG @""
-//
-//#define V__RUS @""
-//#define V__ENG @""
-//
-//#define V__RUS @""
-//#define V__ENG @""
-//
-//#define V__RUS @""
-//#define V__ENG @""
-//
-//#define V__RUS @""
-//#define V__ENG @""
-//
-//#define V__RUS @""
-//#define V__ENG @""
-
-
-
-
 #define V_YES_RUS @"Да"
 #define V_YES_ENG @"1"
 

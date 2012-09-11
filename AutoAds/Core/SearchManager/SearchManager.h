@@ -10,8 +10,8 @@
 #import "AdvField.h"
 #import "AdvGroup.h"
 #import "AdvFieldNames.h"
-#import "AdvDictionaries.h"
 #import "AdvValues.h"
+#import "AdvDictionaries.h"
 #import "OrderedDictionary.h"
 
 @interface SearchManager : NSObject

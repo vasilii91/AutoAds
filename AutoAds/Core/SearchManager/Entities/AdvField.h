@@ -12,6 +12,7 @@
 enum
 {
     ValueTypeString,
+    ValueTypeNumber,
     ValueTypeBoolean,
     ValueTypeDictionary,
     ValueTypePhoto,

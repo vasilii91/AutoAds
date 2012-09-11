@@ -87,6 +87,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1021D64C15FFD2A000360903 /* AdvValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvValues.h; path = SearchManager/Entities/AdvValues.h; sourceTree = "<group>"; };
 		10A3FB6215FC0F6C007FE234 /* SearchViewControllerOld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewControllerOld.m; sourceTree = "<group>"; };
 		10A3FB6415FC1034007FE234 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		10A3FB6515FC1034007FE234 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
@@ -502,6 +503,7 @@
 		BEF6391415F9E86600B0CAD0 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				1021D64C15FFD2A000360903 /* AdvValues.h */,
 				10BE55AE15FC148D008983A6 /* AdvFieldNames.h */,
 				10BE55DB15FD3219008983A6 /* AdvDictionaries.h */,
 				10BE55DC15FD3219008983A6 /* AdvDictionaries.m */,

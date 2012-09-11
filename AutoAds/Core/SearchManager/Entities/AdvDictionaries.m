@@ -1037,7 +1037,10 @@
 + (NSDictionary *)Years
 {
     OrderedDictionary *dictionary = [OrderedDictionary new];
-    NSInteger currentYear = [[NSDate date] year];
+    
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *components = [gregorian components:NSYearCalendarUnit fromDate:[NSDate date]];
+    NSInteger currentYear = [components year];
     
     for (int i = 1950; i <= currentYear; i += 1) {
         NSString *value = [NSString stringWithFormat:@"%d", i];

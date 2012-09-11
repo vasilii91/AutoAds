@@ -72,8 +72,17 @@
 
 #pragma mark - D
 
-#define F_DATE_RUS @""
-#define F_DATE_ENG @""
+#define F_DATE_RUS @"Дата и время размещения"
+#define F_DATE_ENG @"DateCreate"
+
+#define F_DATE_CREATED_RUS @"Дата размещения"
+#define F_DATE_CREATED_ENG @"DateCreate"
+
+#define F_DATE_VALID_RUS @"Дата до которой можно показывать"
+#define F_DATE_VALID_ENG @"DateValid"
+
+#define F_DATE_UPDATE_RUS @"Дата обновления"
+#define F_DATE_UPDATE_ENG @"DateUpdate"
 
 #define F_DESTINY_RUS @"Назначение прицепа"
 #define F_DESTINY_ENG @"destiny"
@@ -151,6 +160,9 @@
 
 #pragma mark - F
 
+#define F_FAV_REMARK_RUS @"Пометка к избранному"
+#define F_FAV_REMARK_ENG @"FavRemark"
+
 #define F_FROM_OFFICIAL_DEALER_RUS @"Приобретен у официального дилера"
 #define F_FROM_OFFICIAL_DEALER_ENG @"FromOfficialDealer"
 
@@ -199,14 +211,29 @@
 
 #pragma mark - I
 
+#define F_IS_NEW_RUS @"На модерации (0 - нет, 1 - постмодерация, 2 - предмодерация)"
+#define F_IS_NEW_ENG @"IsNew"
+
+#define F_IS_VISIBLE_RUS @"Видимое"
+#define F_IS_VISIBLE_ENG @"IsVisible"
+
 #define F_IS_RECEIVE_IMMEDIATELY_MESSAGES @"Принимать мгновенные сообщения"
 #define F_IS_AGREE_WITH_PLACEMENT_RULES @"С правилами размещения согласен"
 
 #define F_I_RAZDEL_RUS @"Рубрика запчасти"
 #define F_I_RAZDEL_ENG @"i_razdel"
 
+#define F_IMPORTANT_RUS @"Важное"
+#define F_IMPORTANT_ENG @"Important"
+
+#define F_IMPORTANT_TILL_RUS @"Дата до которой объявление важное"
+#define F_IMPORTANT_TILL_ENG @"ImportantTill"
+
 #define F_INTERNAL_COLOR_RUS @"Цвет салона"
 #define F_INTERNAL_COLOR_ENG @"InternalColor"
+
+#define F_IS_FAVORITE_RUS @"Избранное"
+#define F_IS_FAVORITE_ENG @"IsFavorite"
 
 
 #pragma mark - L
@@ -236,6 +263,9 @@
 #define F_MILEAGE_RUS @"Пробег, в км."
 #define F_MILEAGE_ENG @"Mileage"
 
+#define F_MODERATE_RUS @"Решение модератора"
+#define F_MODERATE_ENG @"Moderate"
+
 #define F_MODEL_RUS @"Модели машин"
 #define F_MODEL_ENG @"models"
 
@@ -261,6 +291,12 @@
 
 #define F_OPTIONS_RUS @"Набор опций комплектации"
 #define F_OPTIONS_ENG @"Options"
+
+#define F_OPT_IN_STATE_RUS @"Актуальность (0 - акутальное, 1 - просрочено, 2 - дата создания в будущем)"
+#define F_OPT_IN_STATE_ENG @"opt_InState"
+
+#define F_OPT_TITLE_RUS @"Заголовок"
+#define F_OPT_TITLE_ENG @"opt_Title"
 
 
 
@@ -314,6 +350,9 @@
 #define F_REMEMBER_RUS @""
 #define F_REMEMBER_ENG @""
 
+#define F_REMODERATE_RUS @"Повторно проверено модератором"
+#define F_REMODERATE_ENG @"Remoderate"
+
 #define F_RUBRIC_RUS @"Тип транспортного средства"
 #define F_RUBRIC_ENG @"rubric"
 
@@ -345,8 +384,8 @@
 #define F_SORTIE_RUS @"Вынос диска"
 #define F_SORTIE_ENG @"sortie"
 
-#define F_SPIKES_TYPE_RUS @""
-#define F_SPIKES_TYPE_ENG @""
+#define F_SPIKES_RUS @"Тип шиповки"
+#define F_SPIKES_ENG @"Spikes"
 
 #define F_STATES_RUS @"Cостояния"
 #define F_STATES_ENG @"states"
@@ -402,6 +441,9 @@
 
 
 #pragma mark - U
+
+#define F_URL_RUS @"Внешнаяя ссылка на детальный просмотр"
+#define F_URL_ENG @"url"
 
 #define F_USER_ID_RUS @""
 #define F_USER_ID_ENG @""
