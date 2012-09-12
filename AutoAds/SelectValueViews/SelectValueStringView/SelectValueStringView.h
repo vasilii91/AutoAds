@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SelectValueDelegate.h"
+#import "SearchManager.h"
 
 @interface SelectValueStringView : UIView<UITextFieldDelegate>
 {
@@ -16,6 +17,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *textFieldValue;
 @property (nonatomic, assign) NSObject<SelectValueDelegate> *delegate;
+@property (nonatomic, assign) ValueType valueType;
 
 + (SelectValueStringView *)loadView;
 - (IBAction)clickOnOkButton:(id)sender;

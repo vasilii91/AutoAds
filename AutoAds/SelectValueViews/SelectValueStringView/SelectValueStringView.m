@@ -11,6 +11,7 @@
 @implementation SelectValueStringView
 @synthesize textFieldValue;
 @synthesize delegate;
+@synthesize valueType;
 
 #pragma mark - Initialization
 
@@ -39,6 +40,14 @@
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
     selectedValue = textField.text;
+}
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    if (valueType == ValueTypeNumber) {
+        [textFieldValue setKeyboardType:UIKeyboardTypeNumberPad];
+    }
+    return YES;
 }
 
 @end

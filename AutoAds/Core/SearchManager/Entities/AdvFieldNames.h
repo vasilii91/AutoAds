@@ -53,6 +53,9 @@
 #define F_COLOR_RUS @"Цвет"
 #define F_COLOR_ENG @"Color"
 
+#define F_COMPLECTATION_RUS @"Комплектация"
+#define F_COMPLECTATION_ENG @"Complectation"
+
 #define F_CONFIRMATION_CODE_RUS @""
 #define F_CONFIRMATION_CODE_ENG @""
 

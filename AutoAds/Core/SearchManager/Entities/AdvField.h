@@ -16,7 +16,8 @@ enum
     ValueTypeBoolean,
     ValueTypeDictionary,
     ValueTypePhoto,
-    ValueTypeFromInternet,
+    ValueTypeDictionaryFromInternet,
+    ValueTypeCheckboxDictionaryFromInternet
 };
 typedef NSUInteger ValueType;
 

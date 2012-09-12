@@ -59,8 +59,10 @@
             break;
         }
         case ValueTypeString:
+        case ValueTypeNumber:
         {
             SelectValueStringView *stringView = [SelectValueStringView loadView];
+            stringView.valueType = self.field.valueType;
             stringView.delegate = self;
             [self.view addSubview:stringView];
             break;

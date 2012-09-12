@@ -970,6 +970,15 @@
     return dictionary;
 }
 
++ (NSDictionary *)CarStatesForAutoparts
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"0" forKey:@"Б/y"];
+    [dictionary setValue:@"1" forKey:@"Новое"];
+    
+    return dictionary;
+}
+
 + (NSDictionary *)HydrosStates
 {
     OrderedDictionary *dictionary = [OrderedDictionary new];
@@ -1145,6 +1154,18 @@
     
     return dictionary;
 }
+
++ (NSDictionary *)RubricsForAutoparts
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:@"motors" forKey:@"Легковые автомобили"];
+    [dictionary setValue:@"commercial" forKey:@"Коммерческий транспорт"];
+    [dictionary setValue:@"moto" forKey:@"Мототехника"];
+    [dictionary setValue:@"water" forKey:@"Водный транспорт"];
+    
+    return dictionary;
+}
+
 
 + (NSDictionary *)HostLinks
 {
