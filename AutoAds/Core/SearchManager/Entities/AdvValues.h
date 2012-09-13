@@ -26,3 +26,6 @@
 
 #define V_NO_RUS @"Нет"
 #define V_NO_ENG @"2"
+
+#define V_NO_RUS @"Нет"
+#define V_NO_ENG @"2"

@@ -387,8 +387,8 @@
 #define F_SORTIE_RUS @"Вынос диска"
 #define F_SORTIE_ENG @"sortie"
 
-#define F_SPIKES_RUS @"Тип шиповки"
-#define F_SPIKES_ENG @"Spikes"
+#define F_SPIKES_RUS @"Шипы"
+#define F_SPIKES_ENG @"eSpikes"
 
 #define F_STATES_RUS @"Cостояния"
 #define F_STATES_ENG @"states"

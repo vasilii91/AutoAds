@@ -35,6 +35,8 @@ typedef NSUInteger ValueType;
 @property (nonatomic, assign) BOOL isExtendedSearch;
 @property (nonatomic, assign) BOOL isTableOutput;
 @property (nonatomic, assign) BOOL isFullOutput;
+@property (nonatomic, retain) AdvField *dependentField;
+@property (nonatomic, assign) BOOL isExistMainField;
 
 + (AdvField *)newAdvField:(NSString *)nameE :(NSString *)nameR :(id)val :(id)valByDef :(id)selectedVal :(ValueType)valType :(BOOL)isShown :(BOOL)isPrecond :(BOOL)isShort :(BOOL)isExtended :(BOOL)isTable :(BOOL)isFull;
 

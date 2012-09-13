@@ -72,8 +72,8 @@
 + (NSDictionary *)AdPeriods;
 + (NSDictionary *)Bools;
 + (NSDictionary *)GearsStates;
++ (NSDictionary *)WaterStates;
 + (NSDictionary *)CarStates;
-+ (NSDictionary *)CarStatesForAutoparts;
 + (NSDictionary *)HydrosStates;
 + (NSDictionary *)EngineCapacities;
 + (NSDictionary *)FuelTypes;
@@ -97,6 +97,7 @@
 #pragma mark - Main
 
 + (NSDictionary *)Rubrics;
++ (NSDictionary *)RubricsWithSubrubrics;
 + (NSDictionary *)RubricsForAutoparts;
 + (NSDictionary *)HostLinks;
 + (NSDictionary *)Regions;

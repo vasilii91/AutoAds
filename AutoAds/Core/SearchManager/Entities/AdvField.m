@@ -49,4 +49,18 @@
     self.isFullOutput = isFull;
 }
 
+- (id)value
+{
+    if (_dependentField != nil) {
+        if (_isExistMainField == NO) {
+            id newValue = [_value valueForKey:_dependentField.selectedValue];
+            return newValue;
+        }
+        else {
+            _dependentField.selectedValue = nil;
+        }
+    }
+    return _value;
+}
+
 @end

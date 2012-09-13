@@ -831,7 +831,7 @@
 {
     OrderedDictionary *dictionary = [OrderedDictionary new];
     for (float i = 4; i <= 11; i += 0.5) {
-        NSString *value = [NSString stringWithFormat:@"%f", i];
+        NSString *value = [NSString stringWithFormat:@"%0.1f", i];
         [dictionary setValue:value forKey:value];
     }
     
@@ -878,7 +878,7 @@
 + (NSDictionary *)WheelHoleCounts
 {
     OrderedDictionary *dictionary = [OrderedDictionary new];
-    for (int i = 3; i <= 10; i += 1) {
+    for (int i = 1; i <= 10; i += 1) {
         NSString *value = [NSString stringWithFormat:@"%d", i];
         [dictionary setValue:value forKey:value];
     }
@@ -966,15 +966,6 @@
     [dictionary setValue:@"3" forKey:@"Битый"];
     [dictionary setValue:@"4" forKey:@"Аварийный"];
     [dictionary setValue:@"5" forKey:@"На запчасти"];
-    
-    return dictionary;
-}
-
-+ (NSDictionary *)CarStatesForAutoparts
-{
-    OrderedDictionary *dictionary = [OrderedDictionary new];
-    [dictionary setValue:@"0" forKey:@"Б/y"];
-    [dictionary setValue:@"1" forKey:@"Новое"];
     
     return dictionary;
 }
@@ -1151,6 +1142,19 @@
     [dictionary setValue:@"water" forKey:@"Водный транспорт"];
     [dictionary setValue:@"gears" forKey:@"Шины и диски"];
     [dictionary setValue:@"parts" forKey:@"Автозапчасти"];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)RubricsWithSubrubrics
+{
+    OrderedDictionary *dictionary = [OrderedDictionary new];
+    [dictionary setValue:[AdvDictionaries SubrubricsMotors] forKey:@"Легковые автомобили"];
+    [dictionary setValue:[AdvDictionaries SubrubricsCommercial] forKey:@"Коммерческий транспорт"];
+    [dictionary setValue:[AdvDictionaries SubrubricsMoto] forKey:@"Мототехника"];
+    [dictionary setValue:[AdvDictionaries SubrubricsWater] forKey:@"Водный транспорт"];
+    [dictionary setValue:[AdvDictionaries SubrubricsParts] forKey:@"Шины и диски"];
+    [dictionary setValue:nil forKey:@"Автозапчасти"];
     
     return dictionary;
 }

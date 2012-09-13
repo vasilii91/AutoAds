@@ -11,6 +11,7 @@
 
 enum
 {
+    GroupTypeMain,
     GroupTypeGeneral,
     GroupTypePassengerCar,
     GroupTypeTrailerForCar,
