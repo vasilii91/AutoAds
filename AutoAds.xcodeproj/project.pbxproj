@@ -19,6 +19,7 @@
 		10BE55D815FD0E5B008983A6 /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BE55D715FD0E5B008983A6 /* OrderedDictionary.m */; };
 		10BE55DA15FD21CE008983A6 /* SelectValueStringView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10BE55D915FD21CE008983A6 /* SelectValueStringView.xib */; };
 		10BE55DD15FD321A008983A6 /* AdvDictionaries.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BE55DC15FD3219008983A6 /* AdvDictionaries.m */; };
+		10D125541602836E003357E7 /* Advertisement.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D125531602836E003357E7 /* Advertisement.m */; };
 		BE2F84F415FF2B9A008859B1 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2F84F315FF2B9A008859B1 /* Image.m */; };
 		BE2F84F715FF2C3C008859B1 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2F84F615FF2C3C008859B1 /* Photo.m */; };
 		BE2F84FA15FF2CE2008859B1 /* Phone.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2F84F915FF2CE2008859B1 /* Phone.m */; };
@@ -110,6 +111,8 @@
 		10BE55D915FD21CE008983A6 /* SelectValueStringView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SelectValueStringView.xib; path = SelectValueStringView/SelectValueStringView.xib; sourceTree = "<group>"; };
 		10BE55DB15FD3219008983A6 /* AdvDictionaries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvDictionaries.h; path = SearchManager/Entities/AdvDictionaries.h; sourceTree = "<group>"; };
 		10BE55DC15FD3219008983A6 /* AdvDictionaries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdvDictionaries.m; path = SearchManager/Entities/AdvDictionaries.m; sourceTree = "<group>"; };
+		10D125521602836D003357E7 /* Advertisement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Advertisement.h; path = SearchManager/Entities/Advertisement.h; sourceTree = "<group>"; };
+		10D125531602836E003357E7 /* Advertisement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Advertisement.m; path = SearchManager/Entities/Advertisement.m; sourceTree = "<group>"; };
 		BE2F84F215FF2B9A008859B1 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Image.h; path = Entities/Image.h; sourceTree = "<group>"; };
 		BE2F84F315FF2B9A008859B1 /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Image.m; path = Entities/Image.m; sourceTree = "<group>"; };
 		BE2F84F515FF2C3C008859B1 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photo.h; path = Entities/Photo.h; sourceTree = "<group>"; };
@@ -512,6 +515,8 @@
 				BEF6391715F9E8A400B0CAD0 /* AdvField.m */,
 				BEF6391A15F9FD5A00B0CAD0 /* AdvGroup.h */,
 				BEF6391B15F9FD5A00B0CAD0 /* AdvGroup.m */,
+				10D125521602836D003357E7 /* Advertisement.h */,
+				10D125531602836E003357E7 /* Advertisement.m */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -724,6 +729,7 @@
 				BE2F850315FF3000008859B1 /* VehicleModification.m in Sources */,
 				BE2F850615FF303C008859B1 /* VehicleModel.m in Sources */,
 				BE2F850915FF30D4008859B1 /* VehicleBrand.m in Sources */,
+				10D125541602836E003357E7 /* Advertisement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

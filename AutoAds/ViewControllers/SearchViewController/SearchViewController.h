@@ -23,6 +23,7 @@
     
     NSArray *fields;
     AdvField *lastSelectedField;
+    AdvGroup *currentGroup;
 }
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 

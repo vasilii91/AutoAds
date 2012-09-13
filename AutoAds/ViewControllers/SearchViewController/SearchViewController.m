@@ -75,12 +75,14 @@
     AdvField *f1 = (AdvField *)[fields objectAtIndex:0];
     AdvField *f2 = (AdvField *)[fields objectAtIndex:1];
     
-    if ([f1.nameEnglish isEqualToString:F_RUBRIC_ENG] &&
+    if (([f1.nameEnglish isEqualToString:F_RUBRIC_ENG] &&
         [f2.nameEnglish isEqualToString:F_SUBRUBRIC_ENG] &&
         f1.selectedValue != nil &&
-        f2.selectedValue != nil) {
+        f2.selectedValue != nil) ||
+        [f1.selectedValue isEqualToString:@"Автозапчасти"]) {
         
-        fields = [[searchManager categoriesByRubric:f1.selectedValue subrubric:f2.selectedValue] getObligatoryFields];
+        currentGroup = [searchManager categoriesByRubric:f1.selectedValue subrubric:f2.selectedValue];
+        fields = [currentGroup getObligatoryFields];
     }
     
     [self.tableView reloadData];

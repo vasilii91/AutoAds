@@ -46,12 +46,20 @@ static SearchManager *_sharedMySingleton = nil;
     AdvGroup *subrubricGroup = nil;
     if ([subrubric isEqualToString:@"Отечественные авто"] ||
         [subrubric isEqualToString:@"Иномарки"]) {
-        subrubricGroup = [self fillPassengerCarGroup];
+        subrubricGroup = [groups objectAtIndex:1];
     }
-    for (AdvGroup *group in groups) {
-        if ([group.name isEqualToString:subrubric]) {
-            subrubricGroup = group;
-            break;
+    else if ([[[AdvDictionaries SubrubricsMoto] allKeys] containsObject:subrubric]) {
+        subrubricGroup = [groups objectAtIndex:8];
+    }
+    else if ([rubric isEqualToString:@"Автозапчасти"]) {
+        subrubricGroup = [groups objectAtIndex:12];
+    }
+    else {
+        for (AdvGroup *group in groups) {
+            if ([group.name isEqualToString:subrubric]) {
+                subrubricGroup = group;
+                break;
+            }
         }
     }
     
@@ -157,7 +165,7 @@ static SearchManager *_sharedMySingleton = nil;
 - (AdvGroup *)fillPassengerTrailerGroup
 {
     AdvGroup *group = [AdvGroup new];
-    group.name = @"Прицепы легковые";
+    group.name = @"Прицепы";
     group.type = GroupTypeTrailerForCar;
     
     AdvField *f1 = [AdvField newAdvField:F_BRAND_ENG :F_BRAND_RUS :nil :nil :nil :ValueTypeDictionaryFromInternet :YES :YES :NO :YES :YES :YES];
@@ -212,7 +220,7 @@ static SearchManager *_sharedMySingleton = nil;
 - (AdvGroup *)fillTrucksGroup
 {
     AdvGroup *group = [AdvGroup new];
-    group.name = @"Грузовики";
+    group.name = @"Грузовые автомобили";
     group.type = GroupTypeTruck;
     
     AdvField *f1 = [AdvField newAdvField:F_BRAND_ENG :F_BRAND_RUS :nil :nil :nil :ValueTypeDictionaryFromInternet :YES :YES :NO :YES :YES :YES];
@@ -244,7 +252,7 @@ static SearchManager *_sharedMySingleton = nil;
 - (AdvGroup *)fillMKTGroup
 {
     AdvGroup *group = [AdvGroup new];
-    group.name = @"MKT";
+    group.name = @"Малый коммерческий транспорт";
     group.type = GroupTypeMKT;
     
     AdvField *f1 = [AdvField newAdvField:F_BRAND_ENG :F_BRAND_RUS :nil :nil :nil :ValueTypeDictionaryFromInternet :YES :YES :NO :YES :YES :YES];
@@ -277,7 +285,7 @@ static SearchManager *_sharedMySingleton = nil;
 - (AdvGroup *)fillTruckTrailerGroup
 {
     AdvGroup *group = [AdvGroup new];
-    group.name = @"Прицепы грузовые";
+    group.name = @"Грузовые прицепы и полуприцепы";
     group.type = GroupTypeTrailerForTruckCar;
     
     AdvField *f1 = [AdvField newAdvField:F_BRAND_ENG :F_BRAND_RUS :nil :nil :nil :ValueTypeDictionaryFromInternet :YES :YES :NO :YES :YES :YES];
@@ -432,7 +440,11 @@ static SearchManager *_sharedMySingleton = nil;
     group.type = GroupTypeAutoparts;
     
     AdvField *f1 = [AdvField newAdvField:F_TYPE_ENG :F_TYPE_RUS :[AdvDictionaries RubricsForAutoparts] :nil :nil :ValueTypeDictionary :YES :YES :YES :YES :NO :NO];
-    AdvField *f2 = [AdvField newAdvField:F_RUBRICID_ENG :F_RUBRICID_RUS :nil :nil :nil :ValueTypeDictionary :YES :YES :NO :YES :YES :YES];
+    AdvField *f2 = [AdvField newAdvField:F_SUBRUBRIC_ENG :F_SUBRUBRIC_RUS :[AdvDictionaries RubricsWithSubrubrics] :nil :nil :ValueTypeDictionary :YES :YES :NO :YES :YES :YES];
+    f2.dependentField = f1;
+    f1.isExistMainField = YES;
+    f1.dependentField = f2;
+    
     AdvField *f3 = [AdvField newAdvField:F_BRAND_ENG :F_BRAND_RUS :nil :nil :nil :ValueTypeDictionaryFromInternet :YES :NO :YES :YES :NO :YES];
     AdvField *f4 = [AdvField newAdvField:F_MODEL_ENG :F_MODEL_RUS :nil :nil :nil :ValueTypeDictionaryFromInternet :YES :NO :YES :YES :NO :YES];
     AdvField *f5 = [AdvField newAdvField:F_MODIFICATION_ENG :F_MODIFICATION_RUS :nil :nil :nil :ValueTypeDictionaryFromInternet :YES :NO :NO :NO :YES :YES];
