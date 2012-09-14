@@ -13,6 +13,8 @@
 #import "PrettyViews.h"
 #import "SearchManager.h"
 #import "Search2ViewController.h"
+#import "SavedSearchQueriesViewController.h"
+#import "ListOfAdverisementViewController.h"
 
 @interface SearchViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, ButtonCellDelegate>
 {
@@ -26,5 +28,6 @@
     AdvGroup *currentGroup;
 }
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
+- (IBAction)clickOnSearchButton:(id)sender;
 
 @end

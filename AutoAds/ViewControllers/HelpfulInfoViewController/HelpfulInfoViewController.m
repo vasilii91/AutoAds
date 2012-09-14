@@ -32,7 +32,7 @@
     
     UILabel *textLabel = [PrettyViews labelToNavigationBarWithTitle:@"Поиск"];
     self.navigationItem.titleView = textLabel;
-    UIBarButtonItem *bbi = [PrettyViews backBarButtonWithTarget:self action:@selector(goBack:)];
+    UIBarButtonItem *bbi = [PrettyViews backBarButtonWithTarget:self action:@selector(goBack:) frame:CGRectMake(0, 0, 68, 33) imageName:@"backButton.png" text:@"Назад"];
     self.navigationItem.leftBarButtonItem = bbi;
 }
 

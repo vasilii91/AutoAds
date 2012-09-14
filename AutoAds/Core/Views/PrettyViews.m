@@ -26,11 +26,11 @@
     return label;
 }
 
-+ (UIBarButtonItem *)backBarButtonWithTarget:(id)target action:(SEL)action
++ (UIBarButtonItem *)backBarButtonWithTarget:(id)target action:(SEL)action frame:(CGRect)frame imageName:(NSString *)imageName text:(NSString *)text
 {
-    UIButton *back = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 68, 33)];
-    [back setBackgroundImage:[UIImage imageNamed:@"backButton.png"] forState:UIControlStateNormal];
-    [back setTitle:@"Назад" forState:UIControlStateNormal];
+    UIButton *back = [[UIButton alloc] initWithFrame:frame];
+    [back setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    [back setTitle:text forState:UIControlStateNormal];
     [back.titleLabel setFont:[UIFont fontWithName:FONT_DINPro_BOLD size:13.]];
     [back.titleLabel setTextColor:[UIColor whiteColor]];
     [back.titleLabel setShadowColor:[UIColor blackColor]];

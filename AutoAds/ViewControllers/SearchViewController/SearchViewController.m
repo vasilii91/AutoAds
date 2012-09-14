@@ -59,8 +59,12 @@
     
     UILabel *textLabel = [PrettyViews labelToNavigationBarWithTitle:@"Поиск"];
     self.navigationItem.titleView = textLabel;
-    UIBarButtonItem *bbi = [PrettyViews backBarButtonWithTarget:self action:@selector(goBack:)];
+    
+    UIBarButtonItem *bbi = [PrettyViews backBarButtonWithTarget:self action:@selector(goBack:) frame:CGRectMake(0, 0, 68, 33) imageName:@"backButton.png" text:@"Назад"];
     self.navigationItem.leftBarButtonItem = bbi;
+    
+    UIBarButtonItem *bbi2 = [PrettyViews backBarButtonWithTarget:self action:@selector(goToSavedSearchQuery) frame:CGRectMake(0, 0, 39, 39) imageName:@"addBarIcon.png" text:nil];
+    self.navigationItem.rightBarButtonItem = bbi2;
 }
 
 - (void)viewDidUnload
@@ -94,6 +98,18 @@
 - (void)goBack:(id)sender
 {
     [self.tabBarController performSegueWithIdentifier:@"flipSegue" sender:self];
+}
+
+- (void)goToSavedSearchQuery
+{
+    SavedSearchQueriesViewController *vc = [[SavedSearchQueriesViewController alloc] initWithNibName:@"SavedSearchQueriesViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)clickOnSearchButton:(id)sender
+{
+    ListOfAdverisementViewController *vc = [[ListOfAdverisementViewController alloc] initWithNibName:@"ListOfAdverisementViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
@@ -144,14 +160,6 @@
     Search2ViewController *search2VC = [Search2ViewController new];
     search2VC.field = lastSelectedField;
     [self.navigationController pushViewController:search2VC animated:YES];
-}
-
-
-#pragma mark - @protocol RubricSubrubricProtocol <NSObject>
-
-- (void)rubricAndSubrubricWereSelected
-{
-    LOG(@"bla-bla");
 }
 
 @end
