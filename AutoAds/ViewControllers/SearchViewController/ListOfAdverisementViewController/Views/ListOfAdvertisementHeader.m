@@ -25,7 +25,10 @@
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 30)];
     label.textAlignment = UITextAlignmentCenter;
     [label setText:@"TEST"];
-    [header.circulationView initializeWithViews:@[label]];
+    UILabel *label2 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 30)];
+    label.textAlignment = UITextAlignmentCenter;
+    [label setText:@"TEST2"];
+    [header.circulationView initializeWithViews:@[label, label2]];
     
     return header;
 }
@@ -37,6 +40,7 @@
 {
     if (button.tag == 0) {
         // click on left button
+        [self.circulationView scrollToRight];
     }
     else {
         // click on right button

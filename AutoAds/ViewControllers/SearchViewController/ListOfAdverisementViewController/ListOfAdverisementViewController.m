@@ -30,6 +30,7 @@
     if (self) {
         searchedAdvertisements = [NSMutableArray new];
         [searchedAdvertisements addObject:@"advertisement"];
+        [searchedAdvertisements addObject:@"advertisement"];
     }
     return self;
 }
@@ -84,6 +85,11 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return YES;
 }
 
 
@@ -162,12 +168,13 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 53;
+    return 81;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    AdvertisementViewController *avc = [[AdvertisementViewController alloc] initWithNibName:@"AdvertisementViewController" bundle:nil];
+    [self.navigationController pushViewController:avc animated:YES];
 }
 
 

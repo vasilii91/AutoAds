@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "PrettyViews.h"
+#import "AdvertisementCell.h"
+#import "AdvertisementViewController.h"
 
-@interface FavoritesViewController : UIViewController
+@interface FavoritesViewController : UIViewController<AdvertisementCellProtocol>
 
+@property (weak, nonatomic) IBOutlet UITableView *tableViewFavorites;
 @end

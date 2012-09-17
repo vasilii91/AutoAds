@@ -9,13 +9,16 @@
 #import "AdvertisementCell.h"
 
 @implementation AdvertisementCell
-
-
-#pragma mark - Initialization
 @synthesize imageViewPhoto;
 @synthesize labelCarName;
 @synthesize labelPrice;
 @synthesize labelOtherInfo;
+@synthesize buttonFavorite;
+@synthesize cellIndex;
+@synthesize delegate;
+
+
+#pragma mark - Initialization
 
 - (void)awakeFromNib
 {
@@ -30,5 +33,21 @@
 + (AdvertisementCell *)loadView
 {
     return [[[NSBundle mainBundle] loadNibNamed:@"AdvertisementCell" owner:nil options:nil] lastObject];
+}
+
+
+#pragma mark - Setters
+
+- (void)setIsShowFavoriteButton:(BOOL)isShowFavoriteButton
+{
+    self.buttonFavorite.hidden = !isShowFavoriteButton;
+}
+
+
+#pragma mark - Actions
+
+- (IBAction)clickOnFavoriteButton:(id)sender
+{
+    [delegate userClickedOnFavoriteButtonWithIndex:self.cellIndex];
 }
 @end

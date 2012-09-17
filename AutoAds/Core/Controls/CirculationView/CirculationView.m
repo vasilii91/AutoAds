@@ -28,7 +28,7 @@
 
 - (void)scrollToRight
 {
-    
+    [self addSubview:[self.views objectAtIndex:1]];
 }
 
 - (void)scrollToLeft

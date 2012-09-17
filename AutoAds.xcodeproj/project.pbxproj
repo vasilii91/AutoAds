@@ -20,6 +20,20 @@
 		10BE55DA15FD21CE008983A6 /* SelectValueStringView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10BE55D915FD21CE008983A6 /* SelectValueStringView.xib */; };
 		10BE55DD15FD321A008983A6 /* AdvDictionaries.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BE55DC15FD3219008983A6 /* AdvDictionaries.m */; };
 		10D125541602836E003357E7 /* Advertisement.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D125531602836E003357E7 /* Advertisement.m */; };
+		10D1255F1605EF49003357E7 /* AdvertisementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D1255D1605EF49003357E7 /* AdvertisementViewController.m */; };
+		10D125601605EF49003357E7 /* AdvertisementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10D1255E1605EF49003357E7 /* AdvertisementViewController.xib */; };
+		10D125641605F055003357E7 /* AdvertisementCarPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D125631605F055003357E7 /* AdvertisementCarPhotos.m */; };
+		10D125661605F07D003357E7 /* AdvertisementCarPhotos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10D125651605F07D003357E7 /* AdvertisementCarPhotos.xib */; };
+		10D1256816060197003357E7 /* AdvertisementHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10D1256716060197003357E7 /* AdvertisementHeader.xib */; };
+		10D1256B16060230003357E7 /* AdvertisementHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D1256A1606022F003357E7 /* AdvertisementHeader.m */; };
+		10D1256E16060C80003357E7 /* AdvertisementOtherInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D1256D16060C7F003357E7 /* AdvertisementOtherInfo.m */; };
+		10D1257116060FA5003357E7 /* AdvertisementOtherInfoOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D1257016060FA4003357E7 /* AdvertisementOtherInfoOne.m */; };
+		10D1257316060FD0003357E7 /* AdvertisementOtherInfoOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10D1257216060FCF003357E7 /* AdvertisementOtherInfoOne.xib */; };
+		10D1257816062331003357E7 /* AdvertisementWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D1257616062331003357E7 /* AdvertisementWebViewController.m */; };
+		10D1257916062331003357E7 /* AdvertisementWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10D1257716062331003357E7 /* AdvertisementWebViewController.xib */; };
+		10D125801606282B003357E7 /* UIImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D1257F1606282B003357E7 /* UIImageExtension.m */; };
+		10D12589160676BA003357E7 /* LinkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D12588160676BA003357E7 /* LinkCell.m */; };
+		10D1258B160676EF003357E7 /* LinkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10D1258A160676EF003357E7 /* LinkCell.xib */; };
 		BE2F84F415FF2B9A008859B1 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2F84F315FF2B9A008859B1 /* Image.m */; };
 		BE2F84F715FF2C3C008859B1 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2F84F615FF2C3C008859B1 /* Photo.m */; };
 		BE2F84FA15FF2CE2008859B1 /* Phone.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2F84F915FF2CE2008859B1 /* Phone.m */; };
@@ -127,6 +141,28 @@
 		10BE55DC15FD3219008983A6 /* AdvDictionaries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdvDictionaries.m; path = SearchManager/Entities/AdvDictionaries.m; sourceTree = "<group>"; };
 		10D125521602836D003357E7 /* Advertisement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Advertisement.h; path = SearchManager/Entities/Advertisement.h; sourceTree = "<group>"; };
 		10D125531602836E003357E7 /* Advertisement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Advertisement.m; path = SearchManager/Entities/Advertisement.m; sourceTree = "<group>"; };
+		10D1255C1605EF49003357E7 /* AdvertisementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvertisementViewController.h; path = AdvertisementViewController/AdvertisementViewController.h; sourceTree = "<group>"; };
+		10D1255D1605EF49003357E7 /* AdvertisementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdvertisementViewController.m; path = AdvertisementViewController/AdvertisementViewController.m; sourceTree = "<group>"; };
+		10D1255E1605EF49003357E7 /* AdvertisementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AdvertisementViewController.xib; path = AdvertisementViewController/AdvertisementViewController.xib; sourceTree = "<group>"; };
+		10D125621605F055003357E7 /* AdvertisementCarPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvertisementCarPhotos.h; path = AdvertisementViewController/Views/AdvertisementCarPhotos.h; sourceTree = "<group>"; };
+		10D125631605F055003357E7 /* AdvertisementCarPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdvertisementCarPhotos.m; path = AdvertisementViewController/Views/AdvertisementCarPhotos.m; sourceTree = "<group>"; };
+		10D125651605F07D003357E7 /* AdvertisementCarPhotos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AdvertisementCarPhotos.xib; path = AdvertisementViewController/Views/AdvertisementCarPhotos.xib; sourceTree = "<group>"; };
+		10D1256716060197003357E7 /* AdvertisementHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AdvertisementHeader.xib; path = AdvertisementViewController/Views/AdvertisementHeader.xib; sourceTree = "<group>"; };
+		10D125691606022F003357E7 /* AdvertisementHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvertisementHeader.h; path = AdvertisementViewController/Views/AdvertisementHeader.h; sourceTree = "<group>"; };
+		10D1256A1606022F003357E7 /* AdvertisementHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdvertisementHeader.m; path = AdvertisementViewController/Views/AdvertisementHeader.m; sourceTree = "<group>"; };
+		10D1256C16060C7F003357E7 /* AdvertisementOtherInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvertisementOtherInfo.h; path = AdvertisementViewController/Views/AdvertisementOtherInfo.h; sourceTree = "<group>"; };
+		10D1256D16060C7F003357E7 /* AdvertisementOtherInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdvertisementOtherInfo.m; path = AdvertisementViewController/Views/AdvertisementOtherInfo.m; sourceTree = "<group>"; };
+		10D1256F16060FA3003357E7 /* AdvertisementOtherInfoOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvertisementOtherInfoOne.h; path = AdvertisementViewController/Views/AdvertisementOtherInfoOne.h; sourceTree = "<group>"; };
+		10D1257016060FA4003357E7 /* AdvertisementOtherInfoOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdvertisementOtherInfoOne.m; path = AdvertisementViewController/Views/AdvertisementOtherInfoOne.m; sourceTree = "<group>"; };
+		10D1257216060FCF003357E7 /* AdvertisementOtherInfoOne.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AdvertisementOtherInfoOne.xib; path = AdvertisementViewController/Views/AdvertisementOtherInfoOne.xib; sourceTree = "<group>"; };
+		10D1257516062331003357E7 /* AdvertisementWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvertisementWebViewController.h; path = AdvertisementViewController/ViewControllers/AdvertisementWebViewController.h; sourceTree = "<group>"; };
+		10D1257616062331003357E7 /* AdvertisementWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdvertisementWebViewController.m; path = AdvertisementViewController/ViewControllers/AdvertisementWebViewController.m; sourceTree = "<group>"; };
+		10D1257716062331003357E7 /* AdvertisementWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AdvertisementWebViewController.xib; path = AdvertisementViewController/ViewControllers/AdvertisementWebViewController.xib; sourceTree = "<group>"; };
+		10D1257E1606282B003357E7 /* UIImageExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageExtension.h; sourceTree = "<group>"; };
+		10D1257F1606282B003357E7 /* UIImageExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageExtension.m; sourceTree = "<group>"; };
+		10D12587160676BA003357E7 /* LinkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LinkCell.h; path = Views/LinkCell.h; sourceTree = "<group>"; };
+		10D12588160676BA003357E7 /* LinkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LinkCell.m; path = Views/LinkCell.m; sourceTree = "<group>"; };
+		10D1258A160676EF003357E7 /* LinkCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LinkCell.xib; path = Views/LinkCell.xib; sourceTree = "<group>"; };
 		BE2F84F215FF2B9A008859B1 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Image.h; path = Entities/Image.h; sourceTree = "<group>"; };
 		BE2F84F315FF2B9A008859B1 /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Image.m; path = Entities/Image.m; sourceTree = "<group>"; };
 		BE2F84F515FF2C3C008859B1 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photo.h; path = Entities/Photo.h; sourceTree = "<group>"; };
@@ -309,6 +345,56 @@
 			path = OrderedDictionary;
 			sourceTree = "<group>";
 		};
+		10D1255B1605EF1F003357E7 /* AdvertisementViewController */ = {
+			isa = PBXGroup;
+			children = (
+				10D12574160622FC003357E7 /* ViewControllers */,
+				10D125611605F015003357E7 /* Views */,
+				10D1255C1605EF49003357E7 /* AdvertisementViewController.h */,
+				10D1255D1605EF49003357E7 /* AdvertisementViewController.m */,
+				10D1255E1605EF49003357E7 /* AdvertisementViewController.xib */,
+			);
+			name = AdvertisementViewController;
+			sourceTree = "<group>";
+		};
+		10D125611605F015003357E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				10D125621605F055003357E7 /* AdvertisementCarPhotos.h */,
+				10D125631605F055003357E7 /* AdvertisementCarPhotos.m */,
+				10D125651605F07D003357E7 /* AdvertisementCarPhotos.xib */,
+				10D125691606022F003357E7 /* AdvertisementHeader.h */,
+				10D1256A1606022F003357E7 /* AdvertisementHeader.m */,
+				10D1256716060197003357E7 /* AdvertisementHeader.xib */,
+				10D1256C16060C7F003357E7 /* AdvertisementOtherInfo.h */,
+				10D1256D16060C7F003357E7 /* AdvertisementOtherInfo.m */,
+				10D1256F16060FA3003357E7 /* AdvertisementOtherInfoOne.h */,
+				10D1257016060FA4003357E7 /* AdvertisementOtherInfoOne.m */,
+				10D1257216060FCF003357E7 /* AdvertisementOtherInfoOne.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		10D12574160622FC003357E7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				10D1257516062331003357E7 /* AdvertisementWebViewController.h */,
+				10D1257616062331003357E7 /* AdvertisementWebViewController.m */,
+				10D1257716062331003357E7 /* AdvertisementWebViewController.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		10D12585160676A1003357E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				10D12587160676BA003357E7 /* LinkCell.h */,
+				10D12588160676BA003357E7 /* LinkCell.m */,
+				10D1258A160676EF003357E7 /* LinkCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		BE2F84F015FF2B50008859B1 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
@@ -466,6 +552,7 @@
 				10A3FB6215FC0F6C007FE234 /* SearchViewControllerOld.m */,
 				BE96CF32160322FC0074A52B /* SavedSearchQueriesViewController */,
 				BE96CF46160338530074A52B /* ListOfAdverisementViewController */,
+				10D1255B1605EF1F003357E7 /* AdvertisementViewController */,
 			);
 			path = SearchViewController;
 			sourceTree = "<group>";
@@ -503,6 +590,7 @@
 		BEC9944215F88D01006BDCA9 /* MoreViewController */ = {
 			isa = PBXGroup;
 			children = (
+				10D12585160676A1003357E7 /* Views */,
 				BEF6390D15F8EB8000B0CAD0 /* MoreViewController.h */,
 				BEF6390E15F8EB8000B0CAD0 /* MoreViewController.m */,
 			);
@@ -540,6 +628,8 @@
 			isa = PBXGroup;
 			children = (
 				BEC9944D15F89681006BDCA9 /* UIColor+Colors.h */,
+				10D1257E1606282B003357E7 /* UIImageExtension.h */,
+				10D1257F1606282B003357E7 /* UIImageExtension.m */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -784,6 +874,12 @@
 				BEDD194A1603417E00FACC4B /* TableViewHeader.xib in Resources */,
 				BEDD194C16035EFF00FACC4B /* AdvertisementCell.xib in Resources */,
 				BEDD1951160360C600FACC4B /* thumbnail.png in Resources */,
+				10D125601605EF49003357E7 /* AdvertisementViewController.xib in Resources */,
+				10D125661605F07D003357E7 /* AdvertisementCarPhotos.xib in Resources */,
+				10D1256816060197003357E7 /* AdvertisementHeader.xib in Resources */,
+				10D1257316060FD0003357E7 /* AdvertisementOtherInfoOne.xib in Resources */,
+				10D1257916062331003357E7 /* AdvertisementWebViewController.xib in Resources */,
+				10D1258B160676EF003357E7 /* LinkCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -850,6 +946,14 @@
 				BEDD19491603417E00FACC4B /* TableViewHeader.m in Sources */,
 				BEDD194F16035F1A00FACC4B /* AdvertisementCell.m in Sources */,
 				BEDD195A16036C0B00FACC4B /* CirculationView.m in Sources */,
+				10D1255F1605EF49003357E7 /* AdvertisementViewController.m in Sources */,
+				10D125641605F055003357E7 /* AdvertisementCarPhotos.m in Sources */,
+				10D1256B16060230003357E7 /* AdvertisementHeader.m in Sources */,
+				10D1256E16060C80003357E7 /* AdvertisementOtherInfo.m in Sources */,
+				10D1257116060FA5003357E7 /* AdvertisementOtherInfoOne.m in Sources */,
+				10D1257816062331003357E7 /* AdvertisementWebViewController.m in Sources */,
+				10D125801606282B003357E7 /* UIImageExtension.m in Sources */,
+				10D12589160676BA003357E7 /* LinkCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -875,8 +979,8 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Vasil Kasnitski (FNQWCWZDZ8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vasil Kasnitski (FNQWCWZDZ8)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -891,7 +995,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "D088D16A-64A8-4346-ADB3-8E19DE7AD0CA";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D088D16A-64A8-4346-ADB3-8E19DE7AD0CA";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -904,8 +1009,8 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Vasil Kasnitski (FNQWCWZDZ8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vasil Kasnitski (FNQWCWZDZ8)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -914,7 +1019,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "D088D16A-64A8-4346-ADB3-8E19DE7AD0CA";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D088D16A-64A8-4346-ADB3-8E19DE7AD0CA";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -923,13 +1029,13 @@
 		DDE5426415D93FF500172CE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Vasil Kasnitski (FNQWCWZDZ8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoAds/AutoAds-Prefix.pch";
 				INFOPLIST_FILE = "AutoAds/AutoAds-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "D088D16A-64A8-4346-ADB3-8E19DE7AD0CA";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -937,13 +1043,13 @@
 		DDE5426515D93FF500172CE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Vasil Kasnitski (FNQWCWZDZ8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoAds/AutoAds-Prefix.pch";
 				INFOPLIST_FILE = "AutoAds/AutoAds-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "D088D16A-64A8-4346-ADB3-8E19DE7AD0CA";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

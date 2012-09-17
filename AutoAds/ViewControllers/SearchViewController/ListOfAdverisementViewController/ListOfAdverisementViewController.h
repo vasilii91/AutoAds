@@ -11,6 +11,7 @@
 #import "SavedSearchCell.h"
 #import "ListOfAdvertisementHeader.h"
 #import "AdvertisementCell.h"
+#import "AdvertisementViewController.h"
 
 @interface ListOfAdverisementViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 {

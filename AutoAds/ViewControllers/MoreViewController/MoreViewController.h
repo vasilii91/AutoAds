@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "PrettyViews.h"
+#import "LinkCell.h"
+#import "TableViewHeader.h"
 
 @interface MoreViewController : UIViewController
+{
+    NSDictionary *dictionaryLinks;
+}
+
+@property (weak, nonatomic) IBOutlet UITableView *tableViewLinks;
 
 @end

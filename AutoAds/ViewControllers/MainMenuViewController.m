@@ -48,6 +48,11 @@
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return YES;
+}
+
 
 #pragma mark - Actions
 
